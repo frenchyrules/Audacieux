@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3vw;
+    padding: 2vw 0vw;
+    .logo{
+        border-radius: 3.2vw 3.2vw 1.3vw 1.3vw;
+        padding: 1.3vw;
+        background: $black;
+        svg{
+            height: 5vw;
+            width: auto;
+            fill: $white;
+            transition: 0.5s;
+            &:hover{
+                fill: $orange;
+                transition: 0.5s;
+            }
+
+        }
+    }
+    .header-section2{
+        border-radius: 1.3vw;
+        background: $black;
+        color: $white;
+        padding: 1.3vw;
+        gap: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            gap: 0.6vw;
+        }
+    }
+    .header-section3{
+        border-radius: 1.3vw;
+        background: $black;
+        padding: 1.3vw;  
+        gap: 1.3vw;
+        display: flex;
+        flex-direction: row;
+    }
+}

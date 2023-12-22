@@ -1,0 +1,100 @@
+body{
+    background: $white;
+}
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4vw;
+    position: relative;
+    h1{
+        z-index: 1;
+    }
+    p{
+        z-index: 1;
+        font-size: 2.6vw!important;
+    }
+    .heroshape-blue{
+        position: absolute;
+        top: 0vw;
+        left: 20vw;
+        z-index: 0;
+        height: 30vw;
+    }
+    .heroshape-green{
+        position: absolute;
+        top: -10vw;
+        left: 47vw;
+        z-index: -1;
+        height: 25vw;
+    }
+    .heroshape-orange{
+        position: absolute;
+        top: 15vw;
+        left: 55vw;
+        z-index: -1;
+        height: 25vw;
+    }
+}
+.home-section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6vw;
+    margin-top: 4vw;
+    img{
+        border-radius: 2.6vw;
+    }
+    h3{
+        color: $blue;
+    }
+    p{
+        width: 40%;
+    }
+    span{
+        color: $blue;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.home-section3{
+    margin-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h3{
+        margin-top: 1.9vw;
+        color: $yellow;
+    }
+    h4{
+        font-family: neulis-cursive, sans-serif;
+        font-style: normal;
+        font-size: 3.5vw;
+    }
+    span{
+        color: $yellow;
+    }
+    p{
+        margin-top: 1.3vw;
+        width: 40%;
+    }
+    .secondary-btn{
+        margin-top: 2.6vw;
+        color: $yellow;
+        border: 0.06vw solid $yellow;
+        &:hover{
+            background: $yellow;
+            color: $white;
+        }
+    }
+}

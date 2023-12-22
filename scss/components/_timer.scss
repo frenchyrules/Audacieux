@@ -1,0 +1,106 @@
+.countdown-wrapper-small{
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    bottom: 2vw;
+    .countdown-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.1vw;
+        width: 4.8vw;
+        height: 4.8vw;
+        border: 0.06vw solid $black;
+        border-radius: 0.6vw;
+        background: $white;
+        padding: 1vw!important;
+        .countdown-text {
+            display: flex;
+            flex-direction: column;
+            font-family: neulis-cursive, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: $black;
+        }
+        .number {
+            font-size: 1.5vw;
+            margin-bottom: -0.5vw; // Adjust the margin as needed
+
+          }
+      
+          .unit {
+            font-size: 0.8vw;
+          }
+        &:nth-child(1) .countdown-text {
+            color: $green; 
+          }
+        
+          &:nth-child(2) .countdown-text {
+            color: $pink;
+          }
+        
+          &:nth-child(3) .countdown-text {
+            color: $orange;
+          }
+        
+          &:nth-child(4) .countdown-text {
+            color: $blue;
+          }
+          &:nth-child(5) .countdown-text {
+            color: $yellow;
+          }
+      }
+}
+
+.countdown-wrapper-big{
+    z-index: 0;
+    display: flex;
+    bottom: 2vw;
+    .countdown-box-big {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0vw;
+        width: 17vw;
+        height: 17vw;
+        border: 0.06vw solid $black;
+        border-radius: 0.6vw;
+        background: $white;
+        padding: 1vw!important;
+        .countdown-text-big {
+            display: flex;
+            flex-direction: column;
+            font-family: neulis-cursive, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: $black;
+        }
+        .number-big {
+            font-size: 8.4vw;
+            margin-bottom: -0.5vw; // Adjust the margin as needed
+
+          }
+      
+          .unit-big {
+            font-size: 2vw;
+          }
+        &:nth-child(1) .countdown-text-big {
+            color: $green; 
+          }
+        
+          &:nth-child(2) .countdown-text-big {
+            color: $pink;
+          }
+        
+          &:nth-child(3) .countdown-text-big {
+            color: $orange;
+          }
+        
+          &:nth-child(4) .countdown-text-big {
+            color: $blue;
+          }
+          &:nth-child(5) .countdown-text-big {
+            color: $yellow;
+          }
+      }
+}

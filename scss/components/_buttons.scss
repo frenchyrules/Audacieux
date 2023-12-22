@@ -1,0 +1,67 @@
+.primary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21vw;
+    height: 4.8vw;
+    border-radius: 0.6vw;
+    background: $white;
+    color: $black;
+    font-family: neulis-neue, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1vw;
+    text-decoration: none;
+    transition:0.5s;
+    &:hover{
+        transform: translateY(3px);
+        transition:0.5s;
+        font-weight: 800;
+        background: $orange;
+        color: $white
+    }
+};
+
+.secondary-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0vw 3vw;
+    height: 4.8vw;
+    border-radius: 0.6vw;
+    border: 0.06vw solid $black;
+    color: $black;
+    font-family: neulis-neue, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:0.5s;
+    &:hover{
+        transform: translateY(3px);
+        transition:0.5s;
+        background: $blue;
+        color: $white
+    }
+};
+
+.tertiary-btn{
+    padding: 0.6vw 1.3vw;
+    border-radius: 0.6vw;
+    background: $white;
+    color: $black;
+    font-family: neulis-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    text-decoration: none;
+    transition:0.5s;
+    &:hover{
+        transform: translateY(3px);
+        transition:0.5s;
+        background: $orange;
+        color: $white
+    }
+};
