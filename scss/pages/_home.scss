@@ -1,5 +1,8 @@
-body{
+main{
     background: $white;
+    position: relative;
+    z-index: 200;
+    height: fit-content;
 }
 .hero-banner{
     display: flex;
@@ -8,6 +11,8 @@ body{
     text-align: center;
     gap: 4vw;
     position: relative;
+    color: $black;
+
     h1{
         z-index: 1;
     }
@@ -45,8 +50,12 @@ body{
     text-align: center;
     gap: 6vw;
     margin-top: 4vw;
+    color: $black;
+    background: $white;
+    padding: 0vw, 4vw, 0vw, 4vw;
     img{
         border-radius: 2.6vw;
+        width: 85%;
     }
     h3{
         color: $blue;
@@ -56,6 +65,7 @@ body{
     }
     span{
         color: $blue;
+        font-weight: 600;
     }
     .wrapper{
         display: flex;
@@ -67,34 +77,194 @@ body{
 }
 .home-section3{
     margin-top: 10vw;
+    padding: 4vw;
+    color: $black;
+    background: $white;
+
+        .stroke-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 4vw;
+            border-radius: 25px;
+            border: 2px solid $yellow;
+            h3{
+                margin-top: 1.9vw;
+                color: $yellow;
+            }
+            h4{
+                font-family: neulis-cursive, sans-serif;
+                font-style: normal;
+                font-size: 3.5vw;
+            }
+            span{
+                color: $yellow;
+                font-weight: 600;
+            }
+            p{
+                margin-top: 1.3vw;
+                width: 40%;
+            }
+            .secondary-btn{
+                margin-top: 2.6vw;
+                color: $yellow;
+                border: 0.06vw solid $yellow;
+                &:hover{
+                    background: $yellow;
+                    color: $white;
+                }
+            }
+        }
+}
+.home-section4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6vw;
+    margin-top: 4vw;
+    background: $white;
+}
+.home-section-tuned{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    margin-top: 8vw;
+    color: $black;
+    background: $white;
     h3{
-        margin-top: 1.9vw;
-        color: $yellow;
-    }
-    h4{
-        font-family: neulis-cursive, sans-serif;
-        font-style: normal;
-        font-size: 3.5vw;
-    }
-    span{
-        color: $yellow;
-    }
-    p{
-        margin-top: 1.3vw;
-        width: 40%;
-    }
-    .secondary-btn{
-        margin-top: 2.6vw;
-        color: $yellow;
-        border: 0.06vw solid $yellow;
-        &:hover{
-            background: $yellow;
-            color: $white;
-        }
+        color: $blue;
     }
 }
+
+//RESPONSIVE
+@media only screen and (max-width: 1200px) {
+    p{
+        font-size: 1.5vw;
+    }
+    a{
+        font-size: 1.5vw!important;
+    }
+    .title-footer{
+        font-size: 2vw;
+    }
+    footer{
+        .link{
+            margin-top: 1vw;
+        }
+    }
+  }
+@media only screen and (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 8vw;
+    }
+    h3{
+        font-size: 6vw;
+    }
+    p{
+        font-size: 2vw;
+    }
+    a{
+        font-size: 2vw;
+    }
+    footer{
+        .footer-row{
+            flex-direction: column;
+            text-align: center;
+            .footer-bloc{
+                margin-top: 2vw;
+            }
+        }
+        a{
+            font-size: 2vw!important;
+        }
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .hero-banner {
+        h1{
+            font-size: 18vw!important;
+            line-height: 18vw;
+        }
+        p{
+            font-size: 4vw!important;
+        }
+    }
+    .countdown-wrapper-small{
+        display: none;
+    }
+    p{
+        font-size: 4vw;
+    }
+
+    footer{
+        .footer-row{
+            flex-direction: column;
+            text-align: center;
+            .footer-bloc{
+                .title-footer{
+                    font-size: 4vw;
+                }
+                margin-top: 3vw;
+            }
+        }
+        a{
+            font-size: 3vw!important;
+        }
+    }
+    .home-section2{
+
+        p{
+            width: 90%;
+        }
+        a{
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            font-size: 3vw!important;
+            padding: 4vw;
+        }
+    }
+    .home-section3{
+        .stroke-wrapper{
+            p{
+                width: 100%;
+            }
+            h4{
+                width: 100%;
+            }
+            a{
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+                font-size: 3vw!important;
+                padding: 4vw;
+            }
+        }
+    }
+    .home-section4{
+        flex-direction: column;
+        .card-candidat{
+            width: 90%;
+            a{
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+                font-size: 3vw!important;
+                padding: 4vw;
+            }
+        }
+        .card-contributeur{
+            width: 90%;
+            a{
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+                font-size: 3vw!important;
+                padding: 4vw;
+            }
+        }
+    }
+  }
