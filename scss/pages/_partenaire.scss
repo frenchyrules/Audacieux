@@ -1,0 +1,180 @@
+.partenaireheader{
+    background: $orange!important;
+    color: $white;
+}
+
+.partenaire-section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw 0vw;
+    h1{
+        color: $orange;
+        text-align: center;
+        line-height: 90%;
+    }
+
+    .text-hero-banner{
+        color: $black;
+        text-align: center;
+        margin-top: 4vw;
+        width: 50%;
+    }
+}
+
+.partenaire-section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40vw;
+    padding: 0vw 16vw 0vw 16vw;
+    margin-top: 6vw;
+    gap: 2vw;
+    .candidat-column-right{
+        width: 100%;
+        border-radius: 2.6vw;
+        background: url(/assets/images/image-partenaire.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    .candidat-column-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+        }
+        h2{
+            color: $orange;
+            text-transform: uppercase;
+            width: 80%;
+            line-height: 95%;
+        }
+        p{
+            color: $black;
+            width: 85%;
+        }
+    }
+}
+
+.partenaire-section3{
+    h3{
+        color: $black;
+    }
+    padding: 6vw 8vw 6vw 8vw;
+
+    .stroke-wrapper-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 25px;
+        border: 2px solid $orange;
+        padding: 4vw;
+        gap: 4vw;
+        .stroke-wrapper-row{
+            display: flex;
+            gap: 2vw;
+        }
+        .stroke-wrapper-column{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: $orange;
+            p{
+                // background: red;
+                font-weight: 800;
+                width: 20vw;
+            }
+        }
+    }
+}
+
+// .partenaire-section4{
+//     padding: 0vw 8vw 0vw 8vw;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     .faq-wrapper{
+//         display: flex;
+//         width: 100%;
+//         align-items: flex-start;
+//         h2{
+//             color: $green;
+//         }
+//     }
+//         /* Style the buttons that are used to open and close the accordion panel */
+//         .accordion {
+//             font-family: neulis-cursive, sans-serif;
+//             font-weight: 600;
+//             font-style: normal;
+//             font-size: 1.7vw;
+//             display: flex;
+//             gap: 2vw;
+//             align-items: center;
+//             background-color: #eeeeee00;
+//             cursor: pointer;
+//             padding: 18px;
+//             width: 100%;
+//             text-align: left;
+//             border: none;
+//             outline: none;
+//             transition: 0.4s;
+//             border-bottom: 2px solid $green;
+//             color: $black;
+//             &:hover{
+//                     color: $green;
+//             }
+//         }
+        
+//         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+//         // .active, .accordion:hover {
+//         //     background-color: #ccc;
+//         // }
+        
+//         /* Style the accordion panel. Note: hidden by default */
+//         .panel {
+//             padding: 2vw;
+//             width: 100%;
+//             display: none;
+//             overflow: hidden;
+//             text-align: start;
+//             p{
+//                 font-weight: 500!important;
+//                 color: $black;
+//             }
+//         }
+// }
+
+.partenaire-section5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $orange;
+    gap: 2vw;
+    padding: 4vw 0vw;
+    h2{
+        color: $white;
+    }
+    p{
+        color: $white;
+        text-align: center;
+        width: 40%;
+    }
+    .secondary-btn{
+        border: solid $white;
+        color: $white;
+        &:hover{
+            background: $white;
+            color: $orange;
+        }
+    }
+}

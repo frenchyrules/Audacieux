@@ -86,7 +86,7 @@ h3 {
   font-family: neulis-cursive, sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.4vw;
+  font-size: 2.3vw;
 }
 
 h4 {
@@ -878,6 +878,11 @@ main {
     padding: 4vw;
   }
 }
+.editionheader {
+  background: #FBBC0C !important;
+  color: #F8F7F1;
+}
+
 .edition-section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,6 +897,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 4vw 0vw;
 }
 .edition-section1 h1 {
   color: #FBBC0C;
@@ -903,6 +909,7 @@ main {
   color: #343434;
   text-align: center;
   margin-top: 4vw;
+  width: 50%;
 }
 
 .edition-section2 {
@@ -920,7 +927,7 @@ main {
   margin-top: 6vw;
   gap: 2vw;
 }
-.edition-section2 .column-left {
+.edition-section2 .edition-column-left {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -931,7 +938,7 @@ main {
           flex-direction: column;
   gap: 2vw;
 }
-.edition-section2 .column-right {
+.edition-section2 .edition-column-right {
   width: 100%;
   border-radius: 2.6vw;
   background: url(/assets/images/placeholder-img.jpg);
@@ -945,10 +952,34 @@ main {
 
 .edition-section3 {
   padding: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .edition-section3 .text-hero-banner {
   color: #343434;
   text-align: center;
+  width: 50%;
+}
+.edition-section3 a {
+  margin-top: 2vw;
+  text-transform: uppercase;
+  border: solid #009873;
+  color: #009873;
+}
+.edition-section3 a:hover {
+  background: #009873;
+  color: #F8F7F1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -988,4 +1019,704 @@ main {
   main .edition-section3 .text-hero-banner {
     font-size: 7vw !important;
   }
+}
+.partenaireheader {
+  background: #DF6430 !important;
+  color: #F8F7F1;
+}
+
+.partenaire-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4vw 0vw;
+}
+.partenaire-section1 h1 {
+  color: #DF6430;
+  text-align: center;
+  line-height: 90%;
+}
+.partenaire-section1 .text-hero-banner {
+  color: #343434;
+  text-align: center;
+  margin-top: 4vw;
+  width: 50%;
+}
+
+.partenaire-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40vw;
+  padding: 0vw 16vw 0vw 16vw;
+  margin-top: 6vw;
+  gap: 2vw;
+}
+.partenaire-section2 .candidat-column-right {
+  width: 100%;
+  border-radius: 2.6vw;
+  background: url(/assets/images/image-partenaire.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.partenaire-section2 .candidat-column-left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.partenaire-section2 .candidat-column-left div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vw;
+}
+.partenaire-section2 .candidat-column-left h2 {
+  color: #DF6430;
+  text-transform: uppercase;
+  width: 80%;
+  line-height: 95%;
+}
+.partenaire-section2 .candidat-column-left p {
+  color: #343434;
+  width: 85%;
+}
+
+.partenaire-section3 {
+  padding: 6vw 8vw 6vw 8vw;
+}
+.partenaire-section3 h3 {
+  color: #343434;
+}
+.partenaire-section3 .stroke-wrapper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #DF6430;
+  padding: 4vw;
+  gap: 4vw;
+}
+.partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+}
+.partenaire-section3 .stroke-wrapper-container .stroke-wrapper-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #DF6430;
+}
+.partenaire-section3 .stroke-wrapper-container .stroke-wrapper-column p {
+  font-weight: 800;
+  width: 20vw;
+}
+
+.partenaire-section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #DF6430;
+  gap: 2vw;
+  padding: 4vw 0vw;
+}
+.partenaire-section5 h2 {
+  color: #F8F7F1;
+}
+.partenaire-section5 p {
+  color: #F8F7F1;
+  text-align: center;
+  width: 40%;
+}
+.partenaire-section5 .secondary-btn {
+  border: solid #F8F7F1;
+  color: #F8F7F1;
+}
+.partenaire-section5 .secondary-btn:hover {
+  background: #F8F7F1;
+  color: #DF6430;
+}
+
+.candidatheader {
+  background: #009873 !important;
+  color: #F8F7F1;
+}
+
+.candidat-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4vw 0vw;
+}
+.candidat-section1 h1 {
+  color: #009873;
+}
+.candidat-section1 .text-hero-banner {
+  color: #343434;
+  text-align: center;
+  margin-top: 4vw;
+  width: 50%;
+}
+
+.candidat-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 35vw;
+  padding: 0vw 16vw 0vw 16vw;
+  margin-top: 6vw;
+  gap: 2vw;
+}
+.candidat-section2 .candidat-column-left {
+  width: 100%;
+  border-radius: 2.6vw;
+  background: url(/assets/images/candidat.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.candidat-section2 .candidat-column-right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.candidat-section2 .candidat-column-right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vw;
+}
+.candidat-section2 .candidat-column-right h2 {
+  color: #009873;
+  text-transform: uppercase;
+  width: 80%;
+  line-height: 95%;
+}
+.candidat-section2 .candidat-column-right p {
+  color: #343434;
+}
+
+.candidat-section3 {
+  padding: 6vw 8vw 6vw 8vw;
+}
+.candidat-section3 h3 {
+  color: #343434;
+}
+.candidat-section3 .stroke-wrapper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #009873;
+  padding: 4vw;
+  gap: 4vw;
+}
+.candidat-section3 .stroke-wrapper-container .stroke-wrapper-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+}
+.candidat-section3 .stroke-wrapper-container .stroke-wrapper-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #009873;
+}
+.candidat-section3 .stroke-wrapper-container .stroke-wrapper-column p {
+  font-weight: 800;
+  width: 20vw;
+}
+
+.candidat-section4 {
+  padding: 0vw 8vw 0vw 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Style the buttons that are used to open and close the accordion panel */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the accordion panel. Note: hidden by default */
+}
+.candidat-section4 .faq-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.candidat-section4 .faq-wrapper h2 {
+  color: #009873;
+}
+.candidat-section4 .accordion {
+  font-family: neulis-cursive, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(238, 238, 238, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 2px solid #009873;
+  color: #343434;
+}
+.candidat-section4 .accordion:hover {
+  color: #009873;
+}
+.candidat-section4 .panel {
+  padding: 2vw;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  text-align: start;
+}
+.candidat-section4 .panel p {
+  font-weight: 500 !important;
+  color: #343434;
+}
+
+.candidat-section5 {
+  margin-top: 4vw;
+}
+.candidat-section5 iframe {
+  width: 100%;
+  height: 180vw;
+}
+.candidat-section5 iframe .HB1eCd-UMrnmb {
+  overflow: hidden !important;
+}
+
+.aboutheader {
+  background: #419EC2 !important;
+  color: #F8F7F1;
+}
+
+.about-section1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4vw 0vw;
+}
+.about-section1 h1 {
+  color: #419EC2;
+  text-align: center;
+  line-height: 90%;
+}
+.about-section1 .text-hero-banner {
+  color: #343434;
+  text-align: center;
+  margin-top: 4vw;
+  width: 50%;
+}
+.about-section1 img {
+  margin-top: 4vw;
+}
+
+.about-section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40vw;
+  padding: 0vw 8vw 0vw 8vw;
+  margin-top: 6vw;
+  gap: 2vw;
+}
+.about-section3 .about-section-column-left {
+  width: 100%;
+  border-radius: 2.6vw;
+  background: url(/assets/images/apropos-image2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.about-section3 .about-section-column-right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2vw;
+}
+.about-section3 .about-section-column-right div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vw;
+}
+.about-section3 .about-section-column-right h2 {
+  color: #419EC2;
+  text-transform: uppercase;
+  width: 80%;
+  line-height: 95%;
+}
+.about-section3 .about-section-column-right p {
+  color: #343434;
+  width: 85%;
+}
+.about-section3 .about-section-column-right p span {
+  color: #419EC2;
+  font-weight: 600;
+}
+
+.about-section4 {
+  padding: 6vw 8vw 6vw 8vw;
+}
+.about-section4 h3 {
+  color: #343434;
+}
+.about-section4 .stroke-wrapper-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #419EC2;
+  padding: 4vw;
+  gap: 4vw;
+}
+.about-section4 .stroke-wrapper-container .stroke-wrapper-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+}
+.about-section4 .stroke-wrapper-container .stroke-wrapper-row .stroke-wrapper-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #419EC2;
+  width: 20vw;
+}
+.about-section4 .stroke-wrapper-container .stroke-wrapper-row .stroke-wrapper-column p {
+  color: #343434;
+}
+
+.about-section5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vw;
+  padding: 4vw 12vw;
+}
+.about-section5 .about-section5-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+.about-section5 .about-section5-left h3 {
+  width: 50%;
+  color: #343434;
+}
+.about-section5 .about-section5-right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1vw;
+}
+.about-section5 .about-section5-right .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+}
+.about-section5 .about-section5-right .row h2 {
+  font-size: 3.2vw;
+}
+.about-section5 .about-section5-right .row .col h4 {
+  color: #419EC2;
+  text-transform: uppercase;
+}
+
+.about-section6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8vw 0vw;
+}
+.about-section6 h2 {
+  color: #419EC2;
+}
+.about-section6 .about-section6-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 4vw 6vw 0vw 6vw;
+}
+.about-section6 .about-section6-row p {
+  width: 30%;
+}
+
+.about-section7 {
+  padding: 0vw 8vw 8vw 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Style the buttons that are used to open and close the accordion panel */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the accordion panel. Note: hidden by default */
+}
+.about-section7 .faq-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.about-section7 .faq-wrapper h2 {
+  color: #419EC2;
+}
+.about-section7 .accordion {
+  font-family: neulis-cursive, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.7vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(238, 238, 238, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 2px solid #419EC2;
+  color: #343434;
+}
+.about-section7 .accordion:hover {
+  color: #419EC2;
+}
+.about-section7 .panel {
+  padding: 2vw;
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  text-align: start;
+}
+.about-section7 .panel p {
+  font-weight: 500 !important;
+  color: #343434;
 }
