@@ -1,3 +1,4 @@
+
 // SMALL COUNTDOWN TIMER //
 // Set the date we're counting down to
 var countDownDate = new Date("Jul 5, 2024 15:37:25").getTime();
@@ -149,3 +150,4 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+

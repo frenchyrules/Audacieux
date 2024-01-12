@@ -9,8 +9,9 @@
 </head>
 <body>
     <main>
+      
       <header>
-        <a class="logo" href="index.html">
+        <a id="Logo" class="logo" href="index.html">
             <svg viewBox="0 0 52 79" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M37.2227 17.0908L32.8117 14.3788L27.8556 0H24.299L19.1993 14.3692L14.689 17.1306C6.00504 21.3186 0 30.1638 0 40.3848V79H52V40.3848C52 30.1295 45.9536 21.2596 37.2227 17.0908ZM23.159 17.5449L24.1996 14.6134L26.038 9.43363L27.8239 14.6148L28.8314 17.5367L33.5598 20.4448L33.2989 20.6053L29.7561 22.7891L28.841 23.3543L26.942 28.7056L26.0007 31.3558L25.0718 28.7385L23.1603 23.3529L22.2646 22.8001L18.7024 20.6039L18.4333 20.4379L23.1603 17.5449H23.159ZM33.8883 46.2957L11.1157 66.4154L9.69281 67.6733L22.393 35.5219L24.3003 40.8951H27.7024L29.6208 35.489L33.2479 44.6702L33.891 46.2971L33.8883 46.2957ZM4.79603 67.0245V40.3848C4.79603 34.6165 7.14091 29.3819 10.9322 25.5738C11.3959 25.1088 11.8817 24.6657 12.3855 24.2446C12.6394 24.032 12.8989 23.8262 13.1625 23.6259C13.364 23.4723 13.5683 23.3214 13.7767 23.176L19.1979 26.519L19.9529 28.648L4.79603 67.0245ZM44.9253 74.2331H9.48441L35.757 51.0215L44.9253 74.2331ZM47.2054 66.9614L37.7113 42.9267L32.0582 28.6164L32.8021 26.5203L38.2233 23.1774C43.6528 26.9964 47.2054 33.2845 47.2054 40.3848V66.9614Z"/>
             </svg>
@@ -19,7 +20,7 @@
             <div class="link">DEUXIÈME ÉDITION / 05.07.2024</div>
             <div>
                 <a class="tertiary-btn" href="edition.html">Édition 2024</a>
-                <!-- <a class="tertiary-btn" href="galerie.html">Galerie</a> -->
+                <a class="tertiary-btn" href="galerie.html">Galerie</a>
                 <a class="tertiary-btn" href="about.html">À propos</a>
             </div>
         </section>
@@ -28,6 +29,44 @@
             <a class="primary-btn" href="partenaire.html">Devenir partenaire</a>
         </section>
     </header>
+
+    <a id="mobile-logo" href="index.html">
+      <svg viewBox="0 0 52 79" fill="black" xmlns="http://www.w3.org/2000/svg">
+      <path d="M37.2227 17.0908L32.8117 14.3788L27.8556 0H24.299L19.1993 14.3692L14.689 17.1306C6.00504 21.3186 0 30.1638 0 40.3848V79H52V40.3848C52 30.1295 45.9536 21.2596 37.2227 17.0908ZM23.159 17.5449L24.1996 14.6134L26.038 9.43363L27.8239 14.6148L28.8314 17.5367L33.5598 20.4448L33.2989 20.6053L29.7561 22.7891L28.841 23.3543L26.942 28.7056L26.0007 31.3558L25.0718 28.7385L23.1603 23.3529L22.2646 22.8001L18.7024 20.6039L18.4333 20.4379L23.1603 17.5449H23.159ZM33.8883 46.2957L11.1157 66.4154L9.69281 67.6733L22.393 35.5219L24.3003 40.8951H27.7024L29.6208 35.489L33.2479 44.6702L33.891 46.2971L33.8883 46.2957ZM4.79603 67.0245V40.3848C4.79603 34.6165 7.14091 29.3819 10.9322 25.5738C11.3959 25.1088 11.8817 24.6657 12.3855 24.2446C12.6394 24.032 12.8989 23.8262 13.1625 23.6259C13.364 23.4723 13.5683 23.3214 13.7767 23.176L19.1979 26.519L19.9529 28.648L4.79603 67.0245ZM44.9253 74.2331H9.48441L35.757 51.0215L44.9253 74.2331ZM47.2054 66.9614L37.7113 42.9267L32.0582 28.6164L32.8021 26.5203L38.2233 23.1774C43.6528 26.9964 47.2054 33.2845 47.2054 40.3848V66.9614Z"/>
+      </svg>
+    </a>
+
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="candidat.html"><li>Candidature artiste</li></a>
+          <a href="partenaire.html"><li>Devenir partenaire</li></a>
+          <a href="about.html"><li>A propos</li></a>
+        </ul>
+      </div>
+    </nav>
+
       <section class="hero-banner">
         <h1>Audacieux<br>Festival</h1>
         <p>le grand retour :<br>l'édition 2024 c’est pour bientôt !</p>
@@ -152,12 +191,14 @@
       </div>
     </section>
 
-    <section class="home-section-tuned">
+    <!-- <section class="home-section-tuned">
       <h2>👁️</h2>
       <h2>STAY TUNED !</h2>
       <h3>Les actualités du festival</h3>
-    </section>
+    </section> -->
+
     <script defer src="script.js"></script>
+
     </main>
 
     <footer>

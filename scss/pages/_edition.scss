@@ -90,6 +90,7 @@
             }
             .text-hero-banner{
                 font-size: 7vw!important;
+                width: 90%;
             }
         }
         .edition-section2{
@@ -103,6 +104,13 @@
             flex-direction: column;
             .text-hero-banner{
                 font-size: 7vw!important;
+                width: 90%;
+            }
+            a{
+                margin-top: 4vw;
+                margin-bottom: 2vw;
+                font-size: 3vw!important;
+                padding: 4vw;
             }
         }
     }

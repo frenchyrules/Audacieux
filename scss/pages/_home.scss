@@ -163,6 +163,12 @@ main{
         display: flex;
         flex-direction: column;
         gap: 8vw;
+        .hero-banner{
+            padding-top: 30%;
+            svg{
+                display: none;
+            }
+        }
     }
     h3{
         font-size: 6vw;
@@ -248,6 +254,7 @@ main{
     }
     .home-section4{
         flex-direction: column;
+        padding-bottom: 8vw;
         .card-candidat{
             width: 90%;
             a{

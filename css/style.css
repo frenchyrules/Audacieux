@@ -554,6 +554,164 @@ header .header-section3 {
           flex-direction: row;
 }
 
+#mobile-logo {
+  display: none;
+  position: absolute;
+  top: 6vw;
+  left: 12vw;
+}
+#mobile-logo svg {
+  height: 12vw !important;
+}
+
+#menuToggle {
+  display: none;
+}
+
+header {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #mobile-logo {
+    display: block;
+  }
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 10vw;
+    left: 70vw;
+    z-index: 100;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+  }
+  #menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+  #menuToggle a:hover {
+    color: tomato;
+  }
+  #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #343434;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+            transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  #menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+            transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+            transform: rotate(-45deg) translate(0, -1px);
+  }
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu {
+    position: absolute;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: -20% 0 0 -83%;
+    padding: 50px;
+    padding-top: 30%;
+    padding-bottom: 100%;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 6vw 0;
+    font-family: neulis-cursive, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8.4vw;
+  }
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 main {
   background: #F8F7F1;
   position: relative;
@@ -779,6 +937,12 @@ main {
             flex-direction: column;
     gap: 8vw;
   }
+  main .hero-banner {
+    padding-top: 30%;
+  }
+  main .hero-banner svg {
+    display: none;
+  }
   h3 {
     font-size: 6vw;
   }
@@ -858,6 +1022,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 8vw;
   }
   .home-section4 .card-candidat {
     width: 90%;
@@ -999,6 +1164,7 @@ main {
   }
   main .edition-section1 .text-hero-banner {
     font-size: 7vw !important;
+    width: 90%;
   }
   main .edition-section2 {
     -webkit-box-orient: vertical;
@@ -1018,6 +1184,13 @@ main {
   }
   main .edition-section3 .text-hero-banner {
     font-size: 7vw !important;
+    width: 90%;
+  }
+  main .edition-section3 a {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    font-size: 3vw !important;
+    padding: 4vw;
   }
 }
 .partenaireheader {
@@ -1196,6 +1369,81 @@ main {
   color: #DF6430;
 }
 
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 0vw 4vw 0vw 4vw;
+  }
+  main .partenaire-section1 h1 {
+    font-size: 14vw !important;
+    line-height: 18vw;
+    text-align: center;
+  }
+  main .partenaire-section1 .text-hero-banner {
+    font-size: 7vw !important;
+    width: 90%;
+  }
+  main .partenaire-section2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0vw 4vw 0vw 4vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .partenaire-section2 h2 {
+    font-size: 6vw !important;
+    width: 100% !important;
+  }
+  main .partenaire-section2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .partenaire-section2 .text-hero-banner {
+    font-size: 7vw !important;
+    width: 90%;
+  }
+  main .partenaire-section2 a {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    font-size: 3vw !important;
+    padding: 4vw;
+  }
+  main .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row h2 {
+    font-size: 5vw;
+  }
+  main .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row h4 {
+    font-size: 5vw;
+  }
+  main .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row p {
+    width: 100%;
+  }
+  main .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row .stroke-wrapper-column {
+    width: 100%;
+  }
+  main .partenaire-section5 {
+    padding: 4vw 0vw 4vw 0vw !important;
+  }
+  main .partenaire-section5 p {
+    width: 100%;
+  }
+  main .partenaire-section5 a {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    margin-bottom: 2vw;
+    font-size: 3vw !important;
+    padding: 4vw;
+  }
+}
 .candidatheader {
   background: #009873 !important;
   color: #F8F7F1;
@@ -1415,6 +1663,77 @@ main {
   overflow: hidden !important;
 }
 
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 0vw 4vw 0vw 4vw;
+  }
+  main .candidat-section1 h1 {
+    font-size: 14vw !important;
+    line-height: 18vw;
+    text-align: center;
+  }
+  main .candidat-section1 .text-hero-banner {
+    font-size: 7vw !important;
+    width: 90%;
+  }
+  main .candidat-section2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0vw 4vw 0vw 4vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .candidat-section2 h2 {
+    font-size: 6vw !important;
+  }
+  main .candidat-section2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .candidat-section2 .text-hero-banner {
+    font-size: 7vw !important;
+    width: 90%;
+  }
+  main .candidat-section2 a {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    font-size: 3vw !important;
+    padding: 4vw;
+  }
+  main .candidat-section3 .stroke-wrapper-container .stroke-wrapper-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .candidat-section3 .stroke-wrapper-container .stroke-wrapper-row h2 {
+    font-size: 5vw;
+  }
+  main .candidat-section3 .stroke-wrapper-container .stroke-wrapper-row h4 {
+    font-size: 5vw;
+  }
+  main .candidat-section3 .stroke-wrapper-container .stroke-wrapper-row p {
+    width: 100%;
+  }
+  main .candidat-section3 .stroke-wrapper-container .stroke-wrapper-row .stroke-wrapper-column {
+    width: 100%;
+  }
+  main .candidat-section4 h2 {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  main .candidat-section4 .accordion {
+    font-size: 4vw;
+  }
+  main .candidat-section4 .accordion svg {
+    display: none;
+  }
+}
 .aboutheader {
   background: #419EC2 !important;
   color: #F8F7F1;
@@ -1719,4 +2038,138 @@ main {
 .about-section7 .panel p {
   font-weight: 500 !important;
   color: #343434;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 0vw 4vw 0vw 4vw;
+  }
+  main .about-section1 h1 {
+    font-size: 18vw !important;
+    line-height: 18vw;
+    text-align: center;
+  }
+  main .about-section1 h2 {
+    font-size: 6vw !important;
+  }
+  main .about-section1 p {
+    font-size: 4vw !important;
+  }
+  main .about-section1 .text-hero-banner {
+    font-size: 7vw !important;
+    width: 90%;
+  }
+  main .about-section3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0vw 4vw 0vw 4vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .about-section3 h2 {
+    font-size: 6vw !important;
+  }
+  main .about-section3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about-section3 .text-hero-banner {
+    font-size: 7vw !important;
+    width: 90%;
+  }
+  main .about-section3 a {
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    font-size: 3vw !important;
+    padding: 4vw;
+  }
+  main .about-section4 .stroke-wrapper-container .stroke-wrapper-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about-section4 .stroke-wrapper-container .stroke-wrapper-row h2 {
+    font-size: 5vw;
+  }
+  main .about-section4 .stroke-wrapper-container .stroke-wrapper-row h4 {
+    font-size: 5vw;
+  }
+  main .about-section4 .stroke-wrapper-container .stroke-wrapper-row .stroke-wrapper-column {
+    width: 100%;
+  }
+  main .about-section5 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about-section5 .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8vw;
+  }
+  main .about-section5 .row .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  main .about-section5 h2 {
+    font-size: 5vw !important;
+  }
+  main .about-section5 h3 {
+    width: 100% !important;
+    text-align: center;
+  }
+  main .about-section5 h4 {
+    font-size: 5vw;
+  }
+  main .about-section6 h2 {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  main .about-section6 .about-section6-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about-section6 .about-section6-row p {
+    width: 100%;
+    margin-top: 4vw;
+  }
+  main .about-section7 h2 {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  main .about-section7 .accordion {
+    font-size: 4vw;
+  }
+  main .about-section7 .accordion svg {
+    display: none;
+  }
 }
