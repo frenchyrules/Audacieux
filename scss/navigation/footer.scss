@@ -15,6 +15,17 @@ footer{
     h1{
         line-height: 100%;
     }
+    .footer-socials{
+
+        a{
+            transition: 0.3s;
+
+            &:hover{
+                transform: translateY(3px);
+                transition: 0.3s;
+            }
+        }
+    }
     .footer-row{
         display: flex;
         flex-direction: row;
