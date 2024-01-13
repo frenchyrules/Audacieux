@@ -58,10 +58,11 @@ header{
 #menuToggle{
     display: none;
 }
-header{
+
+@media only screen and (max-width: 768px) {
+  header{
     display: none;
 }
-@media only screen and (max-width: 768px) {
     #mobile-logo{
         display: block;
     }
@@ -180,7 +181,7 @@ header{
       height: fit-content;
       margin: -20% 0 0 -83%;
       padding: 50px;
-      padding-top: 30%;
+      padding-top: 20%;
       padding-bottom: 100%;
       
       background: #ededed;
