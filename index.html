@@ -6,6 +6,8 @@
     <title>Audacieux festival</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/khy1hxl.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <main>
@@ -104,7 +106,23 @@
               </div>
             </div>
         </div>
-          
+        
+        <script>
+          // GSAP configuration
+          gsap.registerPlugin(ScrollTrigger);
+  
+          // Animation
+          gsap.to(".countdown-wrapper-small", {
+              opacity: 0,
+              scrollTrigger: {
+                  trigger: ".home-section4",
+                  start: "top 50%", // Disappear when the top of .home-section4 is 30% from the top of the viewport
+                  end: "bottom top", // Reappear when the bottom of .home-section4 is at the top of the viewport
+                  toggleActions: "reverse play reverse play",
+              },
+          });
+      </script>
+
         <div class="countdown-wrapper-big">
             <div class="countdown-box-big">
               <div class="countdown-text-big">
@@ -138,6 +156,7 @@
             </div>
         </div>
 
+
         <svg class="heroshape-blue" viewBox="0 0 328 468" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M82.0056 245.592C78.2623 237.213 74.4568 228.605 73.9282 219.443C73.3997 210.28 76.8507 200.31 84.7167 195.589C93.3661 190.401 104.36 192.815 114.358 191.527C127.553 189.823 139.585 180.903 145.045 168.768C149.603 158.654 149.864 146.656 156.293 137.618C164.769 125.701 180.805 122.802 194.361 117.335C228.299 103.632 250.28 70.5851 265.888 37.4697C270.334 28.0402 274.568 18.2561 281.707 10.6615C288.845 3.06681 299.708 -2.0025 309.75 0.765408C321.888 4.118 328.728 17.9824 327.938 30.5531C327.155 43.1237 320.508 54.5188 313.4 64.9125C299.683 84.9782 283.553 103.396 265.471 119.636C253.234 130.627 238.752 144 241.531 160.209C244.852 179.541 268.835 185.575 285.307 196.211C302.133 207.077 313.201 226.851 312.356 246.867C311.51 266.883 298.147 286.146 279.244 292.77C268.574 296.509 256.691 296.397 246.506 301.298C236.314 306.193 228.579 319.697 235.344 328.753C254.919 325.506 274.935 309.776 292.377 319.237C304.142 325.618 307.897 341.765 303.551 354.429C299.204 367.087 288.659 376.641 277.453 383.956C257.754 396.825 232.036 404.445 210.745 394.437C199.752 389.268 190.897 379.838 179.282 376.268C154.235 368.574 130.271 390.748 115.894 412.661C101.524 434.581 87.2474 460.655 61.7842 466.831C38.9451 472.373 14.0104 457.563 4.733 435.968C-4.54443 414.365 0.454933 388.272 14.1721 369.183C27.8893 350.094 49.2609 337.505 71.7643 330.725C92.6012 324.449 116.69 321.563 130.314 304.588C139.909 292.634 143.907 274.216 158.52 269.601C171.671 265.446 188.124 275.05 198.813 266.341C205.404 260.974 205.914 250.431 201.605 243.104C197.296 235.776 189.324 231.304 181.197 228.841C167.405 224.661 152.171 225.432 138.876 230.993C129.475 234.924 121.142 241.101 111.741 245.032C102.339 248.963 90.9099 250.337 82.3911 244.746" fill="#419EC2"/>
             </svg>
@@ -153,7 +172,7 @@
     </section>
 
     <section class="home-section2">
-        <img src="/assets/images/section2-image.png" alt="">
+        <img src="/assets/images/homeimg.jpg" alt="">
         <div class="wrapper">
             <h3>Le festival aux multiples couleurs</h3>
             <p>Nous sommes les Audacieux, un festival artistique associatif ancré à Lyon.<br> Notre but ? <span>Mettre à l'honneur la diversité artistique, encourager l'ouverture d'esprit, en soutenant nos talents émergents lyonnais.</span> L'idée n'est pas seulement de mettre en place un événement, mais de forger une communauté de passionnés, prêts à créer, à découvrir et à s'engager !</p>
@@ -177,7 +196,7 @@
         <h2>✍🏻</h2>
         <h2>CANDIDATER</h2>
         <h3>Rejoins nos artistes !</h3>
-        <p>Prêt à faire vibrer le festival de ton talent ? Que tu sois musicien, artiste visuel, danseur, ou autre, nous voulons te découvrir ! Clique ci-dessous, partage nous ton art, et rejoins notre village artistique.</p>
+        <p>Prêt à faire vibrer le festival de ton talent ? Que tu sois musicien, artiste visuel, danseur, ou autre, nous voulons te découvrir ! Clique ci-dessous, partage nous ton art, et rejoins notre village artistique.<span>"Whirling winds whisper through willows, dancing leaves embrace the autumn symphony."</span></p>
         <div class="button-wrapper">
           <a class="secondary-btn" href="candidat.html">Je deviens un audacieux !</a>
         </div>
@@ -202,7 +221,7 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
       <h1>SUIVEZ-NOUS !</h1>
         <section class="footer-socials">
           <a href="https://www.facebook.com/audacieux.festival/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">          

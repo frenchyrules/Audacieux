@@ -1,4 +1,3 @@
-
 // SMALL COUNTDOWN TIMER //
 // Set the date we're counting down to
 var countDownDate = new Date("Jul 5, 2024 15:37:25").getTime();
@@ -63,8 +62,6 @@ var x = setInterval(function () {
   document.getElementById("seconds-unit").classList.add("unit");
 
 }, 1000);
-
-
 
 // BIG COUNTDOWN TIMER //
 // Set the date we're counting down to

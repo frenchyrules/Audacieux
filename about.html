@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contribuer 🤲🏻</title>
+    <title>Audacieux festival</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/khy1hxl.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <main>
@@ -73,6 +75,7 @@
         <div class="text-hero-banner">
             Le festival aux multiples couleurs
         </div>
+
         <img src="/assets/images/apropos-image.png" alt="">
         <div class="countdown-wrapper-small">
             <div class="countdown-box">
@@ -106,7 +109,23 @@
               </div>
             </div>
         </div>
-      
+        
+        <script>
+          // GSAP configuration
+          gsap.registerPlugin(ScrollTrigger);
+  
+          // Animation
+          gsap.to(".countdown-wrapper-small", {
+              opacity: 0,
+              scrollTrigger: {
+                  trigger: ".home-section4",
+                  start: "top 50%", // Disappear when the top of .home-section4 is 30% from the top of the viewport
+                  end: "bottom top", // Reappear when the bottom of .home-section4 is at the top of the viewport
+                  toggleActions: "reverse play reverse play",
+              },
+          });
+      </script>
+
     </section>
 
     <section class="about-section2">

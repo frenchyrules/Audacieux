@@ -17,6 +17,7 @@ main{
         z-index: 1;
     }
     p{
+        text-transform: uppercase;
         z-index: 1;
         font-size: 2.6vw!important;
     }
@@ -109,10 +110,10 @@ main{
             }
             .secondary-btn{
                 margin-top: 2.6vw;
-                color: $yellow;
-                border: 0.06vw solid $yellow;
+                color: $black;
+                border: 0.06vw solid $black;
                 &:hover{
-                    background: $yellow;
+                    background: $black;
                     color: $white;
                 }
             }
@@ -126,6 +127,7 @@ main{
     text-align: center;
     gap: 6vw;
     margin-top: 4vw;
+    padding-bottom: 8vw;
     background: $white;
 }
 .home-section-tuned{
@@ -229,12 +231,6 @@ main{
         p{
             width: 90%;
         }
-        a{
-            margin-top: 2vw;
-            margin-bottom: 2vw;
-            font-size: 3vw!important;
-            padding: 4vw;
-        }
     }
     .home-section3{
         .stroke-wrapper{
@@ -244,12 +240,6 @@ main{
             h4{
                 width: 100%;
             }
-            a{
-                margin-top: 2vw;
-                margin-bottom: 2vw;
-                font-size: 3vw!important;
-                padding: 4vw;
-            }
         }
     }
     .home-section4{
@@ -257,21 +247,10 @@ main{
         padding-bottom: 8vw;
         .card-candidat{
             width: 90%;
-            a{
-                margin-top: 2vw;
-                margin-bottom: 2vw;
-                font-size: 3vw!important;
-                padding: 4vw;
-            }
+
         }
         .card-contributeur{
             width: 90%;
-            a{
-                margin-top: 2vw;
-                margin-bottom: 2vw;
-                font-size: 3vw!important;
-                padding: 4vw;
-            }
         }
     }
   }

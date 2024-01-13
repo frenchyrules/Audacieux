@@ -9,6 +9,9 @@
     // height: fit-content;
     gap: 2vw;
     padding: 2vw;
+    span{
+        opacity: 0;
+    }
     .button-wrapper{
         height: 100%;
         display: flex;

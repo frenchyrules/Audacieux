@@ -215,6 +215,14 @@ p {
   color: #F8F7F1;
 }
 
+@media only screen and (max-width: 768px) {
+  .secondary-btn {
+    font-size: 4vw !important;
+    padding: 8vw;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+  }
+}
 .card-candidat {
   color: #009873;
   display: -webkit-box;
@@ -232,6 +240,9 @@ p {
   width: 32vw;
   gap: 2vw;
   padding: 2vw;
+}
+.card-candidat span {
+  opacity: 0;
 }
 .card-candidat .button-wrapper {
   height: 100%;
@@ -288,6 +299,7 @@ p {
   display: flex;
   position: fixed;
   bottom: 1vw;
+  text-align: center;
 }
 .countdown-wrapper-small .countdown-box {
   display: -webkit-box;
@@ -740,6 +752,7 @@ main {
   z-index: 1;
 }
 .hero-banner p {
+  text-transform: uppercase;
   z-index: 1;
   font-size: 2.6vw !important;
 }
@@ -861,11 +874,11 @@ main {
 }
 .home-section3 .stroke-wrapper .secondary-btn {
   margin-top: 2.6vw;
-  color: #FBBC0C;
-  border: 0.06vw solid #FBBC0C;
+  color: #343434;
+  border: 0.06vw solid #343434;
 }
 .home-section3 .stroke-wrapper .secondary-btn:hover {
-  background: #FBBC0C;
+  background: #343434;
   color: #F8F7F1;
 }
 
@@ -886,6 +899,7 @@ main {
   text-align: center;
   gap: 6vw;
   margin-top: 4vw;
+  padding-bottom: 8vw;
   background: #F8F7F1;
 }
 
@@ -998,23 +1012,11 @@ main {
   .home-section2 p {
     width: 90%;
   }
-  .home-section2 a {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
-  }
   .home-section3 .stroke-wrapper p {
     width: 100%;
   }
   .home-section3 .stroke-wrapper h4 {
     width: 100%;
-  }
-  .home-section3 .stroke-wrapper a {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
   }
   .home-section4 {
     -webkit-box-orient: vertical;
@@ -1026,20 +1028,8 @@ main {
   .home-section4 .card-candidat {
     width: 90%;
   }
-  .home-section4 .card-candidat a {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
-  }
   .home-section4 .card-contributeur {
     width: 90%;
-  }
-  .home-section4 .card-contributeur a {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
   }
 }
 .editionheader {
@@ -1167,6 +1157,7 @@ main {
   main .edition-section1 .text-hero-banner {
     font-size: 7vw !important;
     width: 90%;
+    text-align: left;
   }
   main .edition-section2 {
     -webkit-box-orient: vertical;
@@ -1187,12 +1178,7 @@ main {
   main .edition-section3 .text-hero-banner {
     font-size: 7vw !important;
     width: 90%;
-  }
-  main .edition-section3 a {
-    margin-top: 4vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
+    margin-bottom: 4vw;
   }
 }
 .partenaireheader {
@@ -1386,6 +1372,7 @@ main {
   main .partenaire-section1 .text-hero-banner {
     font-size: 7vw !important;
     width: 90%;
+    text-align: left;
   }
   main .partenaire-section2 {
     -webkit-box-orient: vertical;
@@ -1411,12 +1398,6 @@ main {
     font-size: 7vw !important;
     width: 90%;
   }
-  main .partenaire-section2 a {
-    margin-top: 4vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
-  }
   main .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1440,13 +1421,6 @@ main {
   }
   main .partenaire-section5 p {
     width: 100%;
-  }
-  main .partenaire-section5 a {
-    margin-top: 4vw;
-    margin-bottom: 4vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
   }
 }
 .candidatheader {
@@ -1683,6 +1657,7 @@ main {
   main .candidat-section1 .text-hero-banner {
     font-size: 7vw !important;
     width: 90%;
+    text-align: left;
   }
   main .candidat-section2 {
     -webkit-box-orient: vertical;
@@ -1706,12 +1681,6 @@ main {
   main .candidat-section2 .text-hero-banner {
     font-size: 7vw !important;
     width: 90%;
-  }
-  main .candidat-section2 a {
-    margin-top: 4vw;
-    margin-bottom: 2vw;
-    font-size: 3vw !important;
-    padding: 4vw;
   }
   main .candidat-section3 .stroke-wrapper-container .stroke-wrapper-row {
     -webkit-box-orient: vertical;
