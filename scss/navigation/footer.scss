@@ -5,18 +5,21 @@ footer{
     color: $white;
     display: flex;
     width: 100%;
-    height: auto;
+    height: fit-content;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2vw;
-    padding: 4vw 0vw 0vw 0vw;
-    scroll-behavior: auto;
+    padding: 4vw 4vw 4vw 4vw;
+    overflow-y: auto;
+    max-height: 100vh;
     h1{
         line-height: 100%;
     }
     .footer-socials{
-
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
         a{
             transition: 0.3s;
 
@@ -48,9 +51,11 @@ footer{
             }
         }
     }
-    .footer-socials{
-        display: flex;
-        flex-direction: row;
-        gap: 1vw;
-    }
 }
+footer::-webkit-scrollbar {
+    display: none;
+  }
+footer {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

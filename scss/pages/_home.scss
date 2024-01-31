@@ -182,9 +182,16 @@ main{
         font-size: 2vw;
     }
     footer{
+        height: fit-content;
+        position: sticky;
+        overflow-y: auto;
+        max-height: 100vh;
         .footer-row{
             flex-direction: column;
             text-align: center;
+            .footer-column{
+                flex-direction: column;
+            }
             .footer-bloc{
                 margin-top: 2vw;
             }
