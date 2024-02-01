@@ -151,11 +151,62 @@
 
 .candidat-section5{
     margin-top: 4vw;
-    iframe{
+    padding: 6vw 8vw 6vw 8vw;
+    background: $green;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .section5-intro{
+        width: 45%;
+        text-align: center;
+    }
+    .formulaire-candidature{
+        background: $white;
+        color: $green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        padding: 8vw 12vw 8vw 12vw;
+        border-radius: 16px;
         width: 100%;
-        height: 180vw;
-        .HB1eCd-UMrnmb{
-            overflow: hidden!important;
+        margin-top: 4vw;
+
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            p{
+                color: $green;
+                font-weight: 800;
+            }
+            input{
+                width: 100%;
+                height: 3vw;
+                border-radius: 6px;
+                background: #ffffff;
+                border: 1px solid $green;
+            }
+            .form-row{
+                width: 100%;
+                display: flex;
+                gap: 2vw;
+                .form-column{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+            .multiselect-dropdown{
+                width: 100%!important;
+                height: 3vw;
+                border-radius: 6px;
+                background: #ffffff;
+                border: 1px solid $green;
+            }
         }
     }
 }

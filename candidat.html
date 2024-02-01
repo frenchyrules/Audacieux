@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/khy1hxl.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="multiselect-dropdown.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 </head>
 <body>
     <main>
@@ -293,7 +295,56 @@
     </section>
 
     <section class="candidat-section5">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpTy6dmNTr8gAMGtnWZYfvngwqO0xm0wCTiAjq4hTP0mmQOQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <h2>Rejoins nos artistes !</h2>
+      <h3>Comment candidater ?</h3>
+      <p class="section5-intro">Remplis simplement le formulaire en indiquant qui tu es, ce que tu fais, et pourquoi tu veux être partie prenante de l'Audacieux Festival. On est impatients de découvrir ton talent !</p>
+      
+      <div class="formulaire-candidature">
+        <p class="text-hero-banner">💌</p>
+        <h4>FORMULAIRE DE CANDIDATURE - ÉDITION 2024</h4>
+        <h5>🔎 Faisons plus ample connaissance...</h5>
+
+        <form>
+          <p><label for="name">Ton prénom *</label><br></p>
+          <input type="text" id="name" name="name"><br>
+          <p><label for="email">Ton adresse email *</label><br></p>
+          <input type="email" id="email" name="email"><br><br>
+
+          <div class="form-row">
+            <div class="form-column">
+              <p><label for="phone">Ton numéro de téléphone *</label><br></p>
+              <input type="tel" id="phone" name="phone"><br>  
+            </div>
+
+            <div class="form-column">
+              <p><label for="name">Ta ville de résidence *</label><br></p>
+              <input type="text" id="name" name="name"><br>  
+            </div>
+          </div>
+
+          <p><label for="email">Tu es un.e ? *</label><br></p>
+            <select name="cars" class="competences" multiple multiselect-search="true" multiselect-select-all="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_642_1564)">
+                <path d="M12 10.828L7.04999 15.778L5.63599 14.364L12 8L18.364 14.364L16.95 15.778L12 10.828Z" fill="#09121F"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_642_1564">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>                
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+              <option value="3">Mercedes</option>
+              <option value="4">Volvo</option>
+              <option value="5">Lexus</option>
+              <option value="6">Tesla</option>
+            </select>
+        </form>
+
+      </div>
+
     </section>
 
     <script defer src="script.js"></script>
