@@ -1754,6 +1754,75 @@ main {
   background: #ffffff;
   border: 1px solid #009873;
 }
+.candidat-section5 .formulaire-candidature form .multiselect-dropdown input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.candidat-section5 .formulaire-candidature form h5 {
+  text-align: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.candidat-section5 .formulaire-candidature form #radio {
+  width: 1vw !important;
+}
+.candidat-section5 .formulaire-candidature form .radio-group {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.candidat-section5 .formulaire-candidature form .radio-group .radio-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1vw;
+}
+.candidat-section5 .formulaire-candidature form button {
+  margin-top: 2vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5vw 2vw 0.5vw 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.6vw;
+  border: none;
+  background: #009873;
+  font-weight: 800;
+  color: #F8F7F1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.candidat-section5 .formulaire-candidature form button:hover {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-weight: 800;
+  background: #DF6430;
+  color: #F8F7F1;
+}
 
 @media only screen and (max-width: 768px) {
   main {

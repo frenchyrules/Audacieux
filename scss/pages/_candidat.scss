@@ -206,6 +206,52 @@
                 border-radius: 6px;
                 background: #ffffff;
                 border: 1px solid $green;
+                input{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height:100%;
+                }
+            }
+            h5{
+                text-align: center;
+                margin-top: 2vw;
+                margin-bottom: 2vw;
+            }
+            #radio{
+                width: 1vw!important;
+            }
+            .radio-group{
+                width: fit-content;
+
+                .radio-row{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 1vw;
+                }
+            }
+
+            button{
+                margin-top: 2vw;
+                width: fit-content;
+                padding: 0.5vw 2vw 0.5vw 2vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.6vw;
+                border: none;
+                background: $green;
+                font-weight: 800;
+                color: $white;
+                transition:0.5s;
+                &:hover{
+                    transform: translateY(3px);
+                    transition:0.5s;
+                    font-weight: 800;
+                    background: $orange;
+                    color: $white
+                }
             }
         }
     }
