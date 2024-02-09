@@ -1729,6 +1729,23 @@ main {
   border-radius: 6px;
   background: #ffffff;
   border: 1px solid #009873;
+  font-family: neulis-neue, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.candidat-section5 .formulaire-candidature form .form-column {
+  margin-top: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 .candidat-section5 .formulaire-candidature form .form-row {
   width: 100%;
@@ -1748,16 +1765,30 @@ main {
   width: 100%;
 }
 .candidat-section5 .formulaire-candidature form .multiselect-dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100% !important;
   height: 3vw;
   border-radius: 6px;
   background: #ffffff;
   border: 1px solid #009873;
+  padding: 0.2vw;
 }
 .candidat-section5 .formulaire-candidature form .multiselect-dropdown input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1765,6 +1796,71 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+}
+.candidat-section5 .formulaire-candidature form .multiselect-dropdown .multiselect-dropdown-list {
+  font-family: neulis-neue, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1vw;
+}
+.candidat-section5 .formulaire-candidature form .multiselect-dropdown .multiselect-dropdown-list .multiselect-dropdown-all-selector div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.candidat-section5 .formulaire-candidature form .multiselect-dropdown .multiselect-dropdown-list .multiselect-dropdown-all-selector .checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.candidat-section5 .formulaire-candidature form .multiselect-dropdown .optext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #009873;
+  color: #F8F7F1;
+  font-family: neulis-neue, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8vw;
+}
+.candidat-section5 .formulaire-candidature form .multiselect-dropdown .optdel {
+  font-size: 1vw;
+  color: #F8F7F1;
 }
 .candidat-section5 .formulaire-candidature form h5 {
   text-align: center;
@@ -1891,6 +1987,68 @@ main {
   }
   main .candidat-section4 .accordion svg {
     display: none;
+  }
+  main .candidat-section5 .section5-intro {
+    width: 100%;
+  }
+  main .candidat-section5 .formulaire-candidature {
+    padding: 4vw;
+  }
+  main .candidat-section5 .formulaire-candidature p {
+    font-size: 4vw;
+  }
+  main .candidat-section5 .formulaire-candidature h2 {
+    text-align: center;
+    font-size: 5vw;
+  }
+  main .candidat-section5 .formulaire-candidature h4 {
+    text-align: center;
+    font-size: 5vw;
+  }
+  main .candidat-section5 .formulaire-candidature h5 {
+    text-align: center;
+    margin-top: 8vw;
+    font-size: 4.5vw;
+  }
+  main .candidat-section5 .formulaire-candidature .subtitle {
+    font-size: 3vw;
+  }
+  main .candidat-section5 .formulaire-candidature .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .candidat-section5 .formulaire-candidature .form-column {
+    margin-top: 4vw;
+  }
+  main .candidat-section5 .formulaire-candidature input {
+    height: 8vw !important;
+    font-family: neulis-neue, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 4vw !important;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  main .candidat-section5 .formulaire-candidature .multiselect-dropdown {
+    height: 8vw !important;
+  }
+  main .candidat-section5 .formulaire-candidature #radio {
+    width: 6vw !important;
+  }
+  main .candidat-section5 .formulaire-candidature button {
+    width: 100%;
+    margin-top: 4vw;
+  }
+  main .candidat-section5 .formulaire-candidature .optext {
+    font-size: 3vw !important;
+  }
+  main .candidat-section5 .formulaire-candidature .optdel {
+    font-size: 3vw !important;
+  }
+  main .candidat-section5 .formulaire-candidature .multiselect-dropdown-list {
+    font-size: 4vw !important;
   }
 }
 .aboutheader {

@@ -189,6 +189,18 @@
                 border-radius: 6px;
                 background: #ffffff;
                 border: 1px solid $green;
+                font-family: neulis-neue, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+                font-size: 1vw;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            .form-column{
+                margin-top: 1vw;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
             }
             .form-row{
                 width: 100%;
@@ -201,16 +213,59 @@
                 }
             }
             .multiselect-dropdown{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
                 width: 100%!important;
                 height: 3vw;
                 border-radius: 6px;
                 background: #ffffff;
                 border: 1px solid $green;
+                padding: 0.2vw;
                 input{
                     display: flex;
+                    flex-direction: row;
                     align-items: center;
                     justify-content: center;
                     height:100%;
+                }
+                .multiselect-dropdown-list{
+                    font-family: neulis-neue, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 1vw;
+                    .multiselect-dropdown-all-selector{
+                        div{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+                        .checked{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            align-items: center;
+                        }
+                    }
+                }
+                .optext{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: fit-content;
+                    background: $green;
+                    color: $white;
+                    font-family: neulis-neue, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 0.8vw;
+                }
+                .optdel{
+                    font-size: 1vw;
+                    color: $white;
                 }
             }
             h5{
@@ -322,6 +377,69 @@
                 font-size: 4vw;
                 svg{
                     display: none;
+                }
+            }
+        }
+        .candidat-section5{
+            .section5-intro{
+                width: 100%;
+            }
+            .formulaire-candidature{
+                padding: 4vw;
+                p{
+                    font-size: 4vw;
+                }
+                h2{
+                    text-align: center;
+                    font-size: 5vw;
+                }
+                h4{
+                    text-align: center;
+                    font-size: 5vw;
+                }
+                h5{
+                    text-align: center;
+                    margin-top: 8vw;
+                    font-size: 4.5vw;
+                }
+                .subtitle{
+                    font-size: 3vw;
+                }
+                .form-row{
+                    flex-direction: column;
+                }
+                .form-column{
+                    margin-top: 4vw;
+                }
+                input{
+                    height: 8vw!important;
+                    font-family: neulis-neue, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-size: 4vw!important;
+                    padding-left: 1vw;
+                    padding-right: 1vw;
+                }
+                .multiselect-dropdown{
+                    height: 8vw!important;
+                    // overflow: hidden;
+                }
+                #radio{
+                    width: 6vw!important;
+                }
+                button{
+                    width: 100%;
+                    margin-top: 4vw;
+                }
+                .optext{
+                    font-size: 3vw!important;
+
+                }
+                .optdel{
+                    font-size: 3vw!important;
+                }
+                .multiselect-dropdown-list{
+                    font-size: 4vw!important;
                 }
             }
         }
