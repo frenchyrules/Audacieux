@@ -119,6 +119,39 @@ main{
             }
         }
 }
+.home-section-main-sponsor{
+    display: flex;
+    background-color: $black;
+    color: $white;
+    margin-top: 4vw;
+    padding: 4vw;
+    .column-left{
+        width: 50%;
+    }
+    .column-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        img{
+            width: 50%;
+        }
+        h2{
+            text-transform: uppercase;
+        }
+        p{
+            color: darken($white, 5%);
+        }
+    }
+    .secondary-btn{
+        color: $pink;
+        border: solid $pink;
+        &:hover{
+            background-color: $pink;
+            color: $white;
+        }
+    }
+}
 .home-section4{
     display: flex;
     flex-direction: row;
@@ -129,6 +162,29 @@ main{
     margin-top: 4vw;
     padding-bottom: 8vw;
     background: $white;
+}
+.nos-partenaires{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 8vw;
+    background: $orange;
+    color: $white;
+    text-align: center;
+    p{
+        color: darken($white, 5%);
+    }
+    .partenaires-bg{
+        display: flex;
+        gap: 2vw;
+        padding: 2vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: $white;
+        border-radius: 20px;
+    }
+
 }
 .home-section-tuned{
     display: flex;
@@ -165,6 +221,7 @@ main{
         display: flex;
         flex-direction: column;
         gap: 8vw;
+        padding: 0vw!important;
         .hero-banner{
             padding-top: 30%;
             svg{
@@ -180,6 +237,22 @@ main{
     }
     a{
         font-size: 2vw;
+    }
+    .home-section-main-sponsor{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .column-left{
+            width: 100%;
+        }
+        .column-right{
+            margin-top: 8vw;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 4vw;
+        }
     }
     footer{
         height: fit-content;
