@@ -96,62 +96,106 @@
     }
 }
 
-// .partenaire-section4{
-//     padding: 0vw 8vw 0vw 8vw;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     .faq-wrapper{
-//         display: flex;
-//         width: 100%;
-//         align-items: flex-start;
-//         h2{
-//             color: $green;
-//         }
-//     }
-//         /* Style the buttons that are used to open and close the accordion panel */
-//         .accordion {
-//             font-family: neulis-cursive, sans-serif;
-//             font-weight: 600;
-//             font-style: normal;
-//             font-size: 1.7vw;
-//             display: flex;
-//             gap: 2vw;
-//             align-items: center;
-//             background-color: #eeeeee00;
-//             cursor: pointer;
-//             padding: 18px;
-//             width: 100%;
-//             text-align: left;
-//             border: none;
-//             outline: none;
-//             transition: 0.4s;
-//             border-bottom: 2px solid $green;
-//             color: $black;
-//             &:hover{
-//                     color: $green;
-//             }
-//         }
+.partenaire-section4{
+    padding: 0vw 8vw 4vw 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // text-align: center;
+    gap: 2vw;
+  h2{
+    color: $orange;
+  }
+  p{
+    color: $black;
+  }
+  #center-text{
+    text-align: center;
+}
+.card-partenaire-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-top: 2vw;
+    .card-partenaire{
+        padding: 2.6vw;
+        width: 410px;
+        height: fit-content;
+        border-radius: 1.5vw;
+        background-color: $black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.6vw;
+        box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+        h3{
+            color: $orange;
+        }
+        p{
+            color: $white;
+            font-weight: 800;
+        }
+        .text-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5vw;
+        }
+        .subtitle{
+            color: darken($white, 5);
+        }
+        #italic{
+            font-style: italic;
+        }
         
-//         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-//         // .active, .accordion:hover {
-//         //     background-color: #ccc;
-//         // }
-        
-//         /* Style the accordion panel. Note: hidden by default */
-//         .panel {
-//             padding: 2vw;
-//             width: 100%;
-//             display: none;
-//             overflow: hidden;
-//             text-align: start;
-//             p{
-//                 font-weight: 500!important;
-//                 color: $black;
-//             }
-//         }
-// }
+        .partner-card-button{
+            margin-top: 0.5vw;
+            background: $blue;
+            p{
+                color: $black;
+            }
+            transition: 0.3s;
+            &:hover{
+                background: $white;
+                transition: 0.3s;
+            }
+        }
+        &:nth-child(2){
+            h3{
+                color: $blue;
+            }
+        }
+        &:nth-child(3){
+            h3{
+                color: $pink;
+            }
+            .partner-card-button{
+                background: $pink;
+                &:hover{
+                    background: $white;
+                    transition: 0.3s;
+                }
+            }
+        }
+        &:nth-child(4){
+            h3{
+                color: $green;
+            }
+            .partner-card-button{
+                background: $green;
+                &:hover{
+                    background: $white;
+                    transition: 0.3s;
+                }
+            }
+        }
+      }
+}
+}
 
 .partenaire-section5{
     display: flex;

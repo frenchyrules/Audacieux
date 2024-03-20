@@ -112,7 +112,7 @@ p {
 
 .subtitle {
   font-family: neulis-neue, sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-style: normal;
   font-size: 0.8vw;
 }
@@ -220,6 +220,12 @@ p {
   transition: 0.5s;
   background: #DF6430;
   color: #F8F7F1;
+}
+
+.partner-card-button {
+  padding: 0.4vw 1.3vw;
+  border-radius: 0.6vw;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1457,6 +1463,139 @@ main {
 .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-column p {
   font-weight: 800;
   width: 20vw;
+}
+
+.partenaire-section4 {
+  padding: 0vw 8vw 4vw 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2vw;
+}
+.partenaire-section4 h2 {
+  color: #DF6430;
+}
+.partenaire-section4 p {
+  color: #343434;
+}
+.partenaire-section4 #center-text {
+  text-align: center;
+}
+.partenaire-section4 .card-partenaire-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1vw;
+  margin-top: 2vw;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire {
+  padding: 2.6vw;
+  width: 410px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 1.5vw;
+  background-color: #343434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.6vw;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire h3 {
+  color: #DF6430;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire p {
+  color: #F8F7F1;
+  font-weight: 800;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire .text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5vw;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire .subtitle {
+  color: #f0ede0;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire #italic {
+  font-style: italic;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire .partner-card-button {
+  margin-top: 0.5vw;
+  background: #419EC2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire .partner-card-button p {
+  color: #343434;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire .partner-card-button:hover {
+  background: #F8F7F1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire:nth-child(2) h3 {
+  color: #419EC2;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire:nth-child(3) h3 {
+  color: #F5B4AE;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire:nth-child(3) .partner-card-button {
+  background: #F5B4AE;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire:nth-child(3) .partner-card-button:hover {
+  background: #F8F7F1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire:nth-child(4) h3 {
+  color: #009873;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire:nth-child(4) .partner-card-button {
+  background: #009873;
+}
+.partenaire-section4 .card-partenaire-row .card-partenaire:nth-child(4) .partner-card-button:hover {
+  background: #F8F7F1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .partenaire-section5 {
