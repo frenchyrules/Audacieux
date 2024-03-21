@@ -1506,7 +1506,7 @@ main {
 }
 .partenaire-section4 .card-partenaire-row .card-partenaire {
   padding: 2.6vw;
-  width: 410px;
+  width: 30%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1939,11 +1939,30 @@ main {
   main .partenaire-section3 .stroke-wrapper-container .stroke-wrapper-row .stroke-wrapper-column {
     width: 100%;
   }
+  main .partenaire-section4 .card-partenaire-row {
+    gap: 4vw;
+    margin-bottom: 8vw;
+  }
+  main .partenaire-section4 .card-partenaire-row .card-partenaire {
+    padding: 4vw;
+    width: 100%;
+  }
+  main .partenaire-section4 .card-partenaire-row .card-partenaire .subtitle {
+    font-size: 2vw;
+  }
+  main .partenaire-section4 .card-partenaire-row .card-partenaire .partner-card-button {
+    margin-top: 4vw;
+  }
   main .partenaire-section5 {
     padding: 4vw 0vw 4vw 0vw !important;
   }
   main .partenaire-section5 p {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 4vw !important;
   }
 }
 .candidatheader {

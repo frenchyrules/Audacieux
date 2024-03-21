@@ -121,7 +121,7 @@
     margin-top: 2vw;
     .card-partenaire{
         padding: 2.6vw;
-        width: 410px;
+        width: 30%;
         height: fit-content;
         border-radius: 1.5vw;
         background-color: $black;
@@ -440,11 +440,33 @@
             }
         }
 
+        .partenaire-section4{
+            .card-partenaire-row{
+                gap: 4vw;
+                margin-bottom: 8vw;
+                .card-partenaire{
+                    padding: 4vw;
+                    width: 100%;
+                    .subtitle{
+                        font-size: 2vw;
+                    }
+                    .partner-card-button{
+                        margin-top: 4vw;
+                    }
+                }
+            }
+        }
+
         .partenaire-section5{
             p{
                 width: 100%;
             }
             padding: 4vw 0vw 4vw 0vw!important;
         }
+    }
+}
+@media only screen and (max-width: 600px){
+    .subtitle{
+        font-size: 4vw!important;
     }
 }
