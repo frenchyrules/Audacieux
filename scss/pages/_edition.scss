@@ -96,12 +96,14 @@
             border-radius: 1.8vw;
             background-image: url(/assets/images/test.jpg);
             background-size: cover;
+            background-size: 110%;
+            transition: all 0.3s ease-in-out;
             background-repeat: no-repeat;
             margin: 0 1vw 1vw 0; /* Margin to create space between items */
             display: flex;
             align-items: flex-end;
             width: 100%; /* Make sure each item takes full width of column */
-            height: 15vw;
+            height: 25vw;
             .text-container{
                 // display: none;
                 opacity: 0;
@@ -110,70 +112,73 @@
 
             }
             &:hover{
+                background-size: 112%;
+                transition: all 0.3s ease-in-out;
+
                 .text-container{
                     opacity: 1;
                     transition: 0.3s;
                 }
             }
             &:nth-child(1){
-                height: 26vw;
+                height: 36vw;
             }
             &:nth-child(2){
-                height: 26vw;
+                height: 25vw;
             }
             &:nth-child(3){
-                height: 15vw;
+                height: 36vw;
             }
             &:nth-child(4){
-                height: 26vw;
+                height: 25vw;
             }
             &:nth-child(5){
-                height: 15vw;
+                height: 25vw;
             }
             &:nth-child(6){
-                height: 26vw;
+                height: 25vw;
             }
             &:nth-child(7){
-                height: 15vw;
+                height: 25vw;
             }
             &:nth-child(8){
-                height: 26vw;
+                height: 36vw;
             }
             &:nth-child(9){
-                height: 15vw;
+                height: 36vw;
             }
             &:nth-child(10){
-                height: 26vw;
+                height: 36vw;
             }
             &:nth-child(11){
-                height: 15vw;
+                height: 25vw;
             }
             &:nth-child(12){
-                height: 26vw;
+                height: 36vw;
             }
             &:nth-child(13){
-                height: 15vw;
+                height: 25vw;
             }
             &:nth-child(14){
-                height: 26vw;
+                height: 25vw;
             }
-            &:nth-child(15){
-                height: 15vw;
+            &:nth-child(25){
+                height: 25vw;
             }
             &:nth-child(16){
-                height: 26vw;
+                height: 36vw;
             }
             &:nth-child(17){
-                height: 15vw;
+                height: 25vw;
             }
             &:nth-child(18){
-                height: 26vw;
+                height: 36vw;
             }
             &:nth-child(19){
-                height: 15vw;
+                height: 25vw;
             }
             &:nth-child(20){
-                height: 26vw;
+                height: 36vw;
             }
         }
     }
@@ -218,5 +223,8 @@
                 margin-bottom: 4vw;
             }
         }
+    }
+    .edition-card{
+        height: 80vw!important;
     }
 }
