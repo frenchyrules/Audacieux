@@ -72,6 +72,56 @@
     text-decoration: none;
 }
 
+.chip {
+    z-index: 100!important;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent; /* Transparent background */
+    border: 2px solid $black; /* White stroke */
+    border-radius: 16px;
+    padding: 8px 16px; /* Adjusted padding */
+    margin: 4px; /* Add some margin between chips */
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    font-family: neulis-cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.129); /* Slight gray on hover */
+    }
+
+    &.selected {
+        background-color: $yellow; /* White background for selected chips */
+        border-color: $black; /* White border for selected chips */
+        color: #000; /* Black text for selected chips */
+
+        .chip-label {
+            margin-left: 8px; /* Add 8px spacing between the check and text */
+            color: #000; /* Black text for selected chips */
+        }
+
+        .check-icon {
+            fill: #000; /* Black checkmark for selected chips */
+            display: block; /* Display the checkmark for selected chips */
+        }
+    }
+
+    .chip-label {
+        color: $black; /* White text for unselected chips */
+    }
+
+    .check-icon {
+        // margin-right: 8px;
+        width: 24px;
+        height: 24px;
+        display: none; /* Initially, hide the checkmark icon */
+        fill: $black; /* White checkmark for unselected chips */
+    }
+}
+
 //RESPONSIVE
 @media only screen and (max-width: 768px) {
     .secondary-btn{
