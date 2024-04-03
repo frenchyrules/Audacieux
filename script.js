@@ -2,7 +2,7 @@
 
 // SMALL COUNTDOWN TIMER //
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 5, 2024 15:37:25").getTime();
+var countDownDate = new Date("Jun 29, 2024 14:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -67,7 +67,7 @@ var x = setInterval(function () {
 
 // BIG COUNTDOWN TIMER //
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 5, 2024 15:37:25").getTime();
+var countDownDate = new Date("Jun 29, 2024 14:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -191,3 +191,56 @@ chips.forEach((chip, index) => {
 window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('chip1').click();
 });
+
+//COPY EMAIL TO CLIPBOARD
+document.getElementById('copyButton').addEventListener('click', function() {
+  copyEmail();
+});
+
+document.getElementById('emailInput').addEventListener('click', function() {
+  copyEmail();
+});
+
+function copyEmail() {
+  var emailInput = document.getElementById('emailInput');
+  emailInput.select();
+  document.execCommand('copy');
+
+  // Hide copy icon and show check icon
+  document.getElementById('copyIcon').style.display = 'none';
+  document.getElementById('checkIcon').style.display = 'inline';
+
+  // Reset icons after 2 seconds
+  setTimeout(function() {
+    document.getElementById('copyIcon').style.display = 'inline';
+    document.getElementById('checkIcon').style.display = 'none';
+  }, 2000);
+}
+
+// MATERIAL STYLE INPUTS
+const inputFields = document.querySelectorAll('.input-field');
+const inputLabels = document.querySelectorAll('.input-label');
+
+inputFields.forEach((inputField, index) => {
+  inputField.addEventListener('focus', () => {
+    inputLabels[index].style.top = '-10px';
+    inputLabels[index].style.fontSize = '12px';
+    inputLabels[index].style.color = '#DF6430';
+});
+
+inputField.addEventListener('blur', () => {
+  if (!inputField.value) {
+    inputLabels[index].style.top = '50%';
+    inputLabels[index].style.fontSize = '';
+    inputLabels[index].style.color = '#808080';
+  }
+});
+
+if (inputField.value) {
+  inputLabels[index].style.top = '-10px';
+  inputLabels[index].style.fontSize = '12px';
+  inputLabels[index].style.color = '$orange';
+}
+});
+
+

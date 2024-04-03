@@ -121,6 +121,7 @@ main{
 }
 .home-section-main-sponsor{
     display: flex;
+    gap: 2vw;
     background-color: $black;
     color: $white;
     margin-top: 4vw;
@@ -151,6 +152,146 @@ main{
             color: $white;
         }
     }
+}
+.village-artistique{
+    padding: 4vw;
+    color: $black;
+    background: $white;
+        .stroke-wrapper{
+            height: fit-content;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 24vw 4vw 24vw 4vw;
+            border-radius: 25px;
+            border: 2px solid $black;
+            background: $black;
+            h2{
+                color: $white;
+                text-transform:uppercase
+            }
+            span{
+                color: $yellow;
+                font-weight: 600;
+            }
+            p{
+                margin-top: 1.3vw;
+                width: 40%;
+                color: $white;
+            }
+            .secondary-btn{
+                margin-top: 2.6vw;
+                color: $yellow;
+                border: 0.06vw solid $yellow;
+                &:hover{
+                    background: $yellow;
+                    color: $black;
+                    border: none;
+                }
+            }
+            .card-village-artistique1{
+                position: absolute;
+                border-radius: 24px;
+                width: 21vw;
+                height: 16.5vw;
+                transform: rotate(8deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                bottom: 5%;
+                left: 5%;
+            }
+            .card-village-artistique2{
+                position: absolute;
+                border-radius: 24px;
+                width: 14.7vw;
+                height: 24vw;
+                transform: rotate(16deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                bottom: 5%;
+                right: 5%;
+            }
+            .card-village-artistique3{
+                position: absolute;
+                border-radius: 24px;
+                width: 24.5vw;
+                height: 13vw;
+                transform: rotate(-8deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                top: 5%;
+                right: 5%;
+            }
+            .card-village-artistique4{
+                position: absolute;
+                border-radius: 24px;
+                width: 10vw;
+                height: 23vw;
+                transform: rotate(84deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                bottom: -3%;
+                right: 50%;
+                left: 50%;
+            }
+            .card-village-artistique5{
+                position: absolute;
+                border-radius: 24px;
+                width: 7.5vw;
+                height: 10vw;
+                transform: rotate(8deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                top: 5%;
+                right: 50%;
+                left: 50%;
+            }
+            .card-village-artistique6{
+                position: absolute;
+                border-radius: 24px;
+                width: 10vw;
+                height: 13vw;
+                transform: rotate(8deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                top: 50%;
+                bottom: 50%;
+                left: 5%;
+            }
+            .card-village-artistique7{
+                position: absolute;
+                border-radius: 24px;
+                width: 24vw;
+                height: 18vw;
+                transform: rotate(-6deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                top: 5%;
+                left: 5%;
+            }
+            .card-village-artistique8{
+                position: absolute;
+                border-radius: 24px;
+                width: 18vw;
+                height: 20vw;
+                transform: rotate(2deg);
+                padding: 24px;
+                background-image: url(/assets/images/test.jpg);
+                background-size: cover;
+                top: 30%;
+                right: 5%;
+            }
+        } 
 }
 .home-section4{
     display: flex;
@@ -183,6 +324,9 @@ main{
         align-items: center;
         background: $white;
         border-radius: 20px;
+        img{
+            width: 15%;
+        }
     }
 
 }
@@ -206,6 +350,12 @@ main{
     }
     a{
         font-size: 1.5vw!important;
+    }
+    .email-container{
+        font-size: 1.5vw!important;
+        #emailInput {
+            width: 25vw!important;
+        }
     }
     .title-footer{
         font-size: 2vw;
@@ -234,9 +384,15 @@ main{
     }
     p{
         font-size: 2vw;
+        width: 90%!important;
     }
     a{
         font-size: 2vw;
+    }
+    .secondary-btn {
+        font-size: 2vw!important;
+        padding: 2vw;
+
     }
     .home-section-main-sponsor{
         flex-direction: column;
@@ -244,6 +400,9 @@ main{
         justify-content: center;
         .column-left{
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .column-right{
             margin-top: 8vw;
@@ -252,6 +411,46 @@ main{
             justify-content: center;
             text-align: center;
             gap: 4vw;
+        }
+    }
+
+    .village-artistique{
+        .stroke-wrapper{
+            padding: 4vw!important;
+            .hide-card{
+                display: none;
+            }
+            p{
+                width: 80%;
+            }
+        }
+    }
+
+    .home-section4{
+        flex-direction: column;
+        p{
+            width: 100%!important;
+        }
+        .card-contributeur {
+            width: 50%;
+         .secondary-btn {
+            font-size: 2vw!important;
+            padding: 2vw;
+        }
+        }
+        .card-candidat {
+            width: 50%;
+         .secondary-btn {
+            font-size: 2vw!important;
+            padding: 2vw;
+
+        }
+        }
+    }
+
+    .partenaires-bg{
+        img{
+            width: 40%!important;
         }
     }
     footer{
@@ -272,9 +471,20 @@ main{
         a{
             font-size: 2vw!important;
         }
+        .email-container{
+            font-size: 2vw!important;
+            #emailInput {
+                width: 33vw!important;
+            }
+        }
     }
   }
 @media only screen and (max-width: 600px) {
+    .secondary-btn {
+        font-size: 3vw!important;
+        padding: 4vw;
+    }
+
     .hero-banner {
         h1{
             font-size: 18vw!important;
@@ -305,6 +515,15 @@ main{
         a{
             font-size: 3vw!important;
         }
+        .email-container{
+            font-size: 2vw!important;
+            #emailInput {
+            width: 47vw!important;
+            font: initial;
+            font-family: neulis-neue, sans-serif;
+
+            }
+        }
     }
     .home-section2{
 
@@ -327,10 +546,30 @@ main{
         padding-bottom: 8vw;
         .card-candidat{
             width: 90%;
+            .secondary-btn {
+                font-size: 3vw!important;
+                padding: 4vw;
+            }
 
         }
         .card-contributeur{
             width: 90%;
+            .secondary-btn {
+                font-size: 3vw!important;
+                padding: 4vw;
+            }
         }
     }
   }
+
+  @media only screen and (max-width: 425px) {
+    .email-container{
+        font-size: 16vw!important;
+        #emailInput {
+            width: 100% !important;
+            font: initial;
+            font-family: neulis-neue, sans-serif;
+
+        }
+    }
+}

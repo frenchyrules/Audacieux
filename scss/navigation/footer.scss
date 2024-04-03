@@ -1,4 +1,4 @@
-footer{
+footer {
     position: sticky;
     bottom: 0;
     background: $black;
@@ -13,49 +13,99 @@ footer{
     padding: 4vw 4vw 1vw 4vw;
     overflow-y: auto;
     max-height: 100vh;
-    h1{
+
+    h1 {
         line-height: 100%;
     }
-    .footer-socials{
+
+    .footer-socials {
         display: flex;
         flex-direction: row;
         gap: 1vw;
-        a{
+
+        a {
             transition: 0.3s;
 
-            &:hover{
+            &:hover {
                 transform: translateY(3px);
                 transition: 0.3s;
             }
         }
     }
-    .footer-row{
+
+    .footer-row {
         display: flex;
         flex-direction: row;
         gap: 4vw;
-        .footer-column{
+
+        .footer-column {
             display: flex;
             flex-direction: column;
             gap: 2vw;
-            .footer-bloc{
+
+            .footer-bloc {
                 display: flex;
                 flex-direction: column;
-                a{
+
+                a {
                     text-decoration: none;
                     color: $white;
-                    &:hover{
+
+                    &:hover {
                         color: darken($white, 10%);
                         text-decoration: underline;
                     }
                 }
+
+                .email-container {
+                    display: flex;
+                    align-items: center;
+                    font-family: neulis-neue, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 1vw;
+                    border-radius: 5px;
+
+                    #emailInput {
+                        width: 16.7vw;
+                        color: $white;
+                        background: rgba(128, 128, 128, 0.141);
+                        border-radius: 8px;
+                        padding-left: 0.3vw;
+                        border: none;
+                        cursor: pointer; // Change cursor on hover
+                    }
+
+                    #copyButton {
+                        background: none;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 10px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+
+                        #copyIcon,
+                        #checkIcon {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
             }
         }
     }
 }
+
 footer::-webkit-scrollbar {
     display: none;
-  }
+}
+
 footer {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
