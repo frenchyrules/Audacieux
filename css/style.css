@@ -851,6 +851,27 @@ main {
   height: fit-content;
 }
 
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hero-banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -868,6 +889,8 @@ main {
   color: #343434;
 }
 .hero-banner h1 {
+  -webkit-animation: fadeInAnimation ease 1s;
+          animation: fadeInAnimation ease 1s;
   z-index: 1;
 }
 .hero-banner p {
@@ -1103,10 +1126,18 @@ main {
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/affiche.jpg);
   background-size: cover;
   bottom: 5%;
   left: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique1:hover {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .village-artistique .stroke-wrapper .card-village-artistique2 {
   position: absolute;
@@ -1116,10 +1147,19 @@ main {
   -webkit-transform: rotate(16deg);
           transform: rotate(16deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/athena.jpg);
   background-size: cover;
+  background-position: center;
   bottom: 5%;
   right: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique2:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .village-artistique .stroke-wrapper .card-village-artistique3 {
   position: absolute;
@@ -1129,24 +1169,41 @@ main {
   -webkit-transform: rotate(-8deg);
           transform: rotate(-8deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/audacieux.jpg);
   background-size: cover;
   top: 5%;
   right: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique3:hover {
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .village-artistique .stroke-wrapper .card-village-artistique4 {
   position: absolute;
   border-radius: 24px;
-  width: 10vw;
-  height: 23vw;
-  -webkit-transform: rotate(84deg);
-          transform: rotate(84deg);
+  width: 23vw;
+  height: 10vw;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/cecile.jpg);
   background-size: cover;
-  bottom: -3%;
-  right: 50%;
-  left: 50%;
+  background-position: center;
+  bottom: 5%;
+  right: 60%;
+  left: 40%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique4:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .village-artistique .stroke-wrapper .card-village-artistique5 {
   position: absolute;
@@ -1156,11 +1213,19 @@ main {
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/dj.jpg);
   background-size: cover;
   top: 5%;
   right: 50%;
   left: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique5:hover {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .village-artistique .stroke-wrapper .card-village-artistique6 {
   position: absolute;
@@ -1170,11 +1235,19 @@ main {
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/iakman.jpg);
   background-size: cover;
   top: 50%;
   bottom: 50%;
   left: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique6:hover {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .village-artistique .stroke-wrapper .card-village-artistique7 {
   position: absolute;
@@ -1184,10 +1257,18 @@ main {
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/jsp.jpg);
   background-size: cover;
   top: 5%;
   left: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique7:hover {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .village-artistique .stroke-wrapper .card-village-artistique8 {
   position: absolute;
@@ -1197,10 +1278,18 @@ main {
   -webkit-transform: rotate(2deg);
           transform: rotate(2deg);
   padding: 24px;
-  background-image: url(/assets/images/test.jpg);
+  background-image: url(/assets/images/cards/koko.jpg);
   background-size: cover;
   top: 30%;
   right: 5%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.village-artistique .stroke-wrapper .card-village-artistique8:hover {
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .home-section4 {

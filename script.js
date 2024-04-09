@@ -242,5 +242,3 @@ if (inputField.value) {
   inputLabels[index].style.color = '$orange';
 }
 });
-
-
