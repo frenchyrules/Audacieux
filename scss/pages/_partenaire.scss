@@ -2,7 +2,15 @@
     background: $orange !important;
     color: $white;
 }
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .partenaire-section1 {
     display: flex;
     flex-direction: column;
@@ -11,6 +19,7 @@
     padding: 4vw 0vw;
 
     h1 {
+        animation: fadeInAnimation ease 1s;
         color: $orange;
         text-align: center;
         line-height: 90%;

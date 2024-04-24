@@ -279,6 +279,18 @@ p {
   fill: #343434; /* White checkmark for unselected chips */
 }
 
+.pill-artiste {
+  color: #F8F7F1;
+  font-family: neulis-neue, sans-serif;
+  background: #009873;
+  font-family: neulis-neue, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5vw;
+  border-radius: 8px;
+  padding: 0vw 0.5vw 0vw 0.5vw;
+}
+
 @media only screen and (max-width: 768px) {
   .secondary-btn {
     font-size: 4vw !important;
@@ -851,25 +863,25 @@ main {
   height: fit-content;
 }
 
-@-webkit-keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+@-webkit-keyframes verticalMove {
+  0%, 100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
-  100% {
-    opacity: 1;
+  50% {
+    -webkit-transform: translateY(-2%) rotate(1deg);
+            transform: translateY(-2%) rotate(1deg);
   }
 }
 
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+@keyframes verticalMove {
+  0%, 100% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
   }
-  100% {
-    opacity: 1;
+  50% {
+    -webkit-transform: translateY(-2%) rotate(1deg);
+            transform: translateY(-2%) rotate(1deg);
   }
 }
 .hero-banner {
@@ -904,6 +916,9 @@ main {
   left: 20vw;
   z-index: 0;
   height: 30vw;
+  -webkit-animation: verticalMove 5s infinite alternate;
+          animation: verticalMove 5s infinite alternate;
+  opacity: 0.8;
 }
 .hero-banner .heroshape-green {
   position: absolute;
@@ -911,6 +926,9 @@ main {
   left: 47vw;
   z-index: -1;
   height: 25vw;
+  -webkit-animation: verticalMove 6s infinite alternate;
+          animation: verticalMove 6s infinite alternate;
+  opacity: 0.8;
 }
 .hero-banner .heroshape-orange {
   position: absolute;
@@ -918,6 +936,9 @@ main {
   left: 55vw;
   z-index: -1;
   height: 25vw;
+  -webkit-animation: verticalMove 7s infinite alternate;
+          animation: verticalMove 7s infinite alternate;
+  opacity: 0.8;
 }
 
 .home-section2 {
@@ -1330,12 +1351,20 @@ main {
 .nos-partenaires p {
   color: #f0ede0;
 }
-.nos-partenaires .partenaires-bg {
+.nos-partenaires .partenaires-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  margin-top: 2vw;
+}
+.nos-partenaires .partenaires-wrapper .partenaires-bg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2vw;
   padding: 2vw;
+  width: 20vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1347,8 +1376,11 @@ main {
   background: #F8F7F1;
   border-radius: 20px;
 }
-.nos-partenaires .partenaires-bg img {
-  width: 15%;
+.nos-partenaires .partenaires-wrapper .partenaires-bg img {
+  width: 100%;
+}
+.nos-partenaires .partenaires-wrapper .partenaires-bg .logoxa {
+  width: 60% !important;
 }
 
 .home-section-tuned {
@@ -1493,8 +1525,27 @@ main {
     font-size: 2vw !important;
     padding: 2vw;
   }
-  .partenaires-bg img {
-    width: 40% !important;
+  .partenaires-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8vw !important;
+    padding-top: 8vw;
+  }
+  .partenaires-wrapper .partenaires-bg {
+    border-radius: 16px !important;
+    width: 80% !important;
+    padding: 4vw !important;
+  }
+  .partenaires-wrapper .partenaires-bg img {
+    width: 100% !important;
   }
   footer {
     height: -webkit-fit-content;
@@ -1618,6 +1669,27 @@ main {
   color: #F8F7F1;
 }
 
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .edition-section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1636,6 +1708,8 @@ main {
 }
 .edition-section1 h1 {
   color: #FBBC0C;
+  -webkit-animation: fadeInAnimation ease 1s;
+          animation: fadeInAnimation ease 1s;
 }
 .edition-section1 h2 {
   color: #FBBC0C;
@@ -1749,7 +1823,11 @@ main {
      -moz-column-gap: 1rem;
           column-gap: 1rem; /* Specifies the gap between columns */
 }
+.edition-section4 .image-container a {
+  text-decoration: none;
+}
 .edition-section4 .image-container .edition-card {
+  position: relative;
   overflow: auto;
   padding: 1.8vw;
   border-radius: 1.8vw;
@@ -1768,10 +1846,30 @@ main {
           align-items: flex-end;
   width: 100%; /* Make sure each item takes full width of column */
   height: 25vw;
+  overflow: hidden;
 }
 .edition-section4 .image-container .edition-card .text-container {
+  position: absolute;
+  width: 85%;
   opacity: 0;
   color: #F8F7F1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.edition-section4 .image-container .edition-card .image-overlay {
+  position: absolute;
+  opacity: 0;
+  background: black;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.edition-section4 .image-container .edition-card .pill-artiste {
+  opacity: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1780,24 +1878,53 @@ main {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.edition-section4 .image-container .edition-card:hover .image-overlay {
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .edition-section4 .image-container .edition-card:hover .text-container {
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
   opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.edition-section4 .image-container .edition-card:hover .pill-artiste {
+  opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .edition-section4 .image-container .edition-card:nth-child(1) {
   height: 36vw;
+  background-image: url(/assets/images/cards/jerome.jpg);
+  background-position: center;
+  background-size: 110%;
+}
+.edition-section4 .image-container .edition-card:nth-child(1):hover {
+  background-size: 112%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.edition-section4 .image-container .edition-card:nth-child(1):hover .text-container {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .edition-section4 .image-container .edition-card:nth-child(2) {
+  background-image: url(/assets/images/cards/FannySerrin.jpeg);
   height: 25vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(3) {
+  background-image: url(/assets/images/cards/frank.jpg);
   height: 36vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(4) {
   height: 25vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(5) {
+  background-image: url(/assets/images/cards/lapatatebleue.png);
   height: 25vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(6) {
@@ -1810,6 +1937,7 @@ main {
   height: 36vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(9) {
+  background-image: url(/assets/images/cards/GalahadLeMatou.jpg);
   height: 36vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(10) {
@@ -1844,6 +1972,9 @@ main {
 }
 .edition-section4 .image-container .edition-card:nth-child(20) {
   height: 36vw;
+}
+.edition-section4 .image-container .edition-card:nth-child(21) {
+  height: 25vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1899,6 +2030,16 @@ main {
   color: #F8F7F1;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .partenaire-section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1916,6 +2057,8 @@ main {
   padding: 4vw 0vw;
 }
 .partenaire-section1 h1 {
+  -webkit-animation: fadeInAnimation ease 1s;
+          animation: fadeInAnimation ease 1s;
   color: #DF6430;
   text-align: center;
   line-height: 90%;
@@ -2590,6 +2733,16 @@ main {
   color: #F8F7F1;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .candidat-section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2607,6 +2760,8 @@ main {
   padding: 4vw 0vw;
 }
 .candidat-section1 h1 {
+  -webkit-animation: fadeInAnimation ease 1s;
+          animation: fadeInAnimation ease 1s;
   color: #009873;
 }
 .candidat-section1 .text-hero-banner {
@@ -3185,6 +3340,16 @@ main {
   color: #F8F7F1;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .about-section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3202,6 +3367,8 @@ main {
   padding: 4vw 0vw;
 }
 .about-section1 h1 {
+  -webkit-animation: fadeInAnimation ease 1s;
+          animation: fadeInAnimation ease 1s;
   color: #419EC2;
   text-align: center;
   line-height: 90%;

@@ -4,13 +4,12 @@ main{
     z-index: 200;
     height: fit-content;
 }
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
+@keyframes verticalMove {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
     }
-    100% {
-        opacity: 1;
+    50% {
+        transform: translateY(-2%) rotate(1deg);
     }
 }
 .hero-banner{
@@ -37,6 +36,8 @@ main{
         left: 20vw;
         z-index: 0;
         height: 30vw;
+        animation: verticalMove 5s infinite alternate;
+        opacity: 0.8;
     }
     .heroshape-green{
         position: absolute;
@@ -44,6 +45,8 @@ main{
         left: 47vw;
         z-index: -1;
         height: 25vw;
+        animation: verticalMove 6s infinite alternate;
+        opacity: 0.8;
     }
     .heroshape-orange{
         position: absolute;
@@ -51,6 +54,8 @@ main{
         left: 55vw;
         z-index: -1;
         height: 25vw;
+        animation: verticalMove 7s infinite alternate;
+        opacity: 0.8;
     }
 }
 .home-section2{
@@ -367,20 +372,28 @@ main{
     p{
         color: darken($white, 5%);
     }
-    .partenaires-bg{
+    .partenaires-wrapper{
         display: flex;
         gap: 2vw;
-        padding: 2vw;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        background: $white;
-        border-radius: 20px;
-        img{
-            width: 15%;
+        margin-top: 2vw;
+        .partenaires-bg{
+            display: flex;
+            gap: 2vw;
+            padding: 2vw;
+            width: 20vw;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background: $white;
+            border-radius: 20px;
+            img{
+                width: 100%;
+            }
+            .logoxa{
+                width: 60%!important;
+            }
         }
     }
-
 }
 .home-section-tuned{
     display: flex;
@@ -500,11 +513,22 @@ main{
         }
     }
 
-    .partenaires-bg{
-        img{
-            width: 40%!important;
+    .partenaires-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8vw!important;
+        padding-top: 8vw;
+        .partenaires-bg{
+            border-radius: 16px!important;
+            width: 80%!important;
+            padding: 4vw!important;
+            img{
+                width: 100%!important;
+            }
         }
     }
+
     footer{
         height: fit-content;
         position: sticky;
