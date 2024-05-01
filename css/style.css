@@ -280,6 +280,7 @@ p {
 }
 
 .pill-artiste {
+  display: none;
   color: #F8F7F1;
   font-family: neulis-neue, sans-serif;
   background: #009873;
@@ -1921,6 +1922,7 @@ main {
   height: 36vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(4) {
+  background-image: url(/assets/images/cards/magico.jpg);
   height: 25vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(5) {
@@ -1928,13 +1930,16 @@ main {
   height: 25vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(6) {
+  background-image: url(/assets/images/cards/biju.png);
   height: 25vw;
 }
 .edition-section4 .image-container .edition-card:nth-child(7) {
   height: 25vw;
+  background-image: url(/assets/images/cards/lwool.png);
 }
 .edition-section4 .image-container .edition-card:nth-child(8) {
   height: 36vw;
+  background-image: url(/assets/images/cards/ideaatelier.jpg);
 }
 .edition-section4 .image-container .edition-card:nth-child(9) {
   background-image: url(/assets/images/cards/GalahadLeMatou.jpg);
@@ -1942,24 +1947,31 @@ main {
 }
 .edition-section4 .image-container .edition-card:nth-child(10) {
   height: 36vw;
+  background-image: url(/assets/images/cards/melimelo.jpg);
 }
 .edition-section4 .image-container .edition-card:nth-child(11) {
   height: 25vw;
+  background-image: url(/assets/images/cards/fabriquejuliette.jpg);
 }
 .edition-section4 .image-container .edition-card:nth-child(12) {
   height: 36vw;
+  background-image: url(/assets/images/cards/danae.jpg);
 }
 .edition-section4 .image-container .edition-card:nth-child(13) {
   height: 25vw;
+  background-image: url(/assets/images/cards/dna.png);
 }
 .edition-section4 .image-container .edition-card:nth-child(14) {
   height: 25vw;
+  background-image: url(/assets/images/cards/coton.jpg);
 }
 .edition-section4 .image-container .edition-card:nth-child(25) {
   height: 25vw;
+  background-image: url(/assets/images/cards/malo.jpeg);
 }
 .edition-section4 .image-container .edition-card:nth-child(16) {
   height: 36vw;
+  background-image: url(/assets/images/cards/jam.jpg);
 }
 .edition-section4 .image-container .edition-card:nth-child(17) {
   height: 25vw;
