@@ -150,47 +150,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// CHIP FILTERS
-const chips = document.querySelectorAll(".chip");
-const editionCard = document.querySelectorAll(".edition-card");
-
-chips.forEach((chip, index) => {
-    chip.addEventListener("click", () => {
-        // Deselect all chips
-        chips.forEach(otherChip => {
-            otherChip.classList.remove("selected");
-            otherChip.querySelector(".check-icon").style.display = "none"; // Hide all checkmarks
-        });
-
-        // Select the clicked chip
-        chip.classList.add("selected");
-
-        // Show the checkmark for the selected chip
-        chip.querySelector(".check-icon").style.display = "block";
-
-        // Get the chip's ID to determine which cards to show
-        const chipId = chip.id;
-
-        // Show or hide cards based on the chip selected
-        editionCard.forEach(card => { // Updated class name
-            if (chipId === "chip1") {
-                // Show all cards for Alpha
-                card.style.display = "flex";
-            } else if (chipId === "chip2") {
-                // Show only Beta-related cards
-                card.style.display = card.classList.contains("beta") ? "flex" : "none";
-            } else if (chipId === "chip3") {
-                // Show only Delta-related cards
-                card.style.display = card.classList.contains("delta") ? "flex" : "none";
-            }
-        });
-    });
-});
-
-// JavaScript to trigger a click on Alpha chip when the page loads
-window.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('chip1').click();
-});
 
 //COPY EMAIL TO CLIPBOARD
 document.getElementById('copyButton').addEventListener('click', function() {

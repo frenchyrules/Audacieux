@@ -280,7 +280,6 @@ p {
 }
 
 .pill-artiste {
-  display: none;
   color: #F8F7F1;
   font-family: neulis-neue, sans-serif;
   background: #009873;
@@ -1964,8 +1963,9 @@ main {
 .edition-section4 .image-container .edition-card:nth-child(14) {
   height: 25vw;
   background-image: url(/assets/images/cards/coton.jpg);
+  background-position: center center;
 }
-.edition-section4 .image-container .edition-card:nth-child(25) {
+.edition-section4 .image-container .edition-card:nth-child(15) {
   height: 25vw;
   background-image: url(/assets/images/cards/malo.jpeg);
 }
@@ -1975,18 +1975,125 @@ main {
 }
 .edition-section4 .image-container .edition-card:nth-child(17) {
   height: 25vw;
+  background-image: url(/assets/images/cards/ilaria.jpeg);
 }
 .edition-section4 .image-container .edition-card:nth-child(18) {
   height: 36vw;
+  background-image: url(/assets/images/cards/jo.jpeg);
 }
 .edition-section4 .image-container .edition-card:nth-child(19) {
   height: 25vw;
+  background-image: url(/assets/images/cards/photo_marie_huguen_-_Marie_Huguen.jpg);
+  background-position: center center;
 }
 .edition-section4 .image-container .edition-card:nth-child(20) {
   height: 36vw;
+  background-image: url(/assets/images/cards/caius.jpg);
 }
 .edition-section4 .image-container .edition-card:nth-child(21) {
   height: 25vw;
+  background-image: url(/assets/images/cards/macera.jpg);
+  background-position: center center;
+}
+.edition-section4 .image-container .edition-card:nth-child(22) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/oops.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(23) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/ombeline.jpg);
+  background-position: center center;
+}
+.edition-section4 .image-container .edition-card:nth-child(24) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/Blackmomille.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(25) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/alexia.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(26) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/nicolas.jpg);
+  background-position: center center;
+}
+.edition-section4 .image-container .edition-card:nth-child(27) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/rozeau.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(28) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/Mutin_de_Perde_1_-_Mutin_de_Perde.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(29) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/jivre.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(30) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/lito.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(31) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/cafard.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(32) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/krysten.jpeg);
+}
+.edition-section4 .image-container .edition-card:nth-child(33) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/melanie.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(34) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/arts.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(35) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/lavande.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(36) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/anna.jpeg);
+}
+.edition-section4 .image-container .edition-card:nth-child(37) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/cmm.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(38) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/poppy.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(39) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/fee.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(40) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/patrick.png);
+}
+.edition-section4 .image-container .edition-card:nth-child(41) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/fredy.jpeg);
+}
+.edition-section4 .image-container .edition-card:nth-child(42) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/belou.png);
+  background-position: center center;
+}
+.edition-section4 .image-container .edition-card:nth-child(43) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/mo.jpg);
+}
+.edition-section4 .image-container .edition-card:nth-child(44) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/florent.jpg);
+  background-position: center center;
+}
+.edition-section4 .image-container .edition-card:nth-child(45) {
+  height: 25vw;
+  background-image: url(/assets/images/cards/laurie.jpg);
 }
 
 @media only screen and (max-width: 768px) {
