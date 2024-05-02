@@ -179,6 +179,9 @@
             &:nth-child(2){
                 background-image: url(/assets/images/cards/FannySerrin.jpeg);
                 height: 25vw;
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(3){
                 background-image: url(/assets/images/cards/frank.jpg);
@@ -187,62 +190,98 @@
             &:nth-child(4){
                 background-image: url(/assets/images/cards/magico.jpg);
                 height: 25vw;
+                .pill-artiste{
+                    background: $purple!important;
+                }
             }
             &:nth-child(5){
                 background-image: url(/assets/images/cards/lapatatebleue.png);
                 height: 25vw;
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(6){
                 background-image: url(/assets/images/cards/biju.png);
                 height: 25vw;
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(7){
                 height: 25vw;
                 background-image: url(/assets/images/cards/lwool.png);
+                .pill-artiste{
+                    background: $green!important;
+                }
             }
             &:nth-child(8){
                 height: 36vw;
                 background-image: url(/assets/images/cards/ideaatelier.jpg);
+                .pill-artiste{
+                    background: $green!important;
+                }
             }
             &:nth-child(9){
                 background-image: url(/assets/images/cards/GalahadLeMatou.jpg);
                 height: 36vw;
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(10){
                 height: 36vw;
                 background-image: url(/assets/images/cards/melimelo.jpg);
+                .pill-artiste{
+                    background: $green!important;
+                }
             }
             &:nth-child(11){
                 height: 25vw;
                 background-image: url(/assets/images/cards/fabriquejuliette.jpg);
+                .pill-artiste{
+                    background: $green!important;
+                }
             }
             &:nth-child(12){
                 height: 36vw;
                 background-image: url(/assets/images/cards/danae.jpg);
+                .pill-artiste{
+                    background: $green!important;
+                }
             }
             &:nth-child(13){
                 height: 25vw;
                 background-image: url(/assets/images/cards/dna.png);
+                .pill-artiste{
+                    background: $orange!important;
+                }
             }
             &:nth-child(14){
                 height: 25vw;
                 background-image: url(/assets/images/cards/coton.jpg);
                 background-position: center center; 
+                .pill-artiste{
+                    background: $orange!important;
+                }
             }
             &:nth-child(15){
                 height: 25vw;
                 background-image: url(/assets/images/cards/malo.jpeg); 
+                .pill-artiste{
+                    background: $orange!important;
+                }
             }
             &:nth-child(16){
                 height: 36vw;
                 background-image: url(/assets/images/cards/jam.jpg); 
             }
             &:nth-child(17){
-                height: 25vw;
-                background-image: url(/assets/images/cards/ilaria.jpeg); 
+                height: 36vw;
+                background-image: url(/assets/images/cards/ilaria.jpeg);
             }
             &:nth-child(18){
-                height: 36vw;
+                height: 25vw;
                 background-image: url(/assets/images/cards/jo.jpeg); 
             }
             &:nth-child(19){
@@ -255,75 +294,123 @@
                 background-image: url(/assets/images/cards/caius.jpg); 
             }
             &:nth-child(21){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/macera.jpg);
                 background-position: center center;
             }
             &:nth-child(22){
                 height: 25vw;
                 background-image: url(/assets/images/cards/oops.png); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(23){
                 height: 25vw;
                 background-image: url(/assets/images/cards/ombeline.jpg);
                 background-position: center center;
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(24){
-                height: 25vw;
-                background-image: url(/assets/images/cards/Blackmomille.png); 
+                height: 36vw;
+                background-image: url(/assets/images/cards/Blackmomille.png);
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(25){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/alexia.jpg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(26){
                 height: 25vw;
                 background-image: url(/assets/images/cards/nicolas.jpg);
+                .pill-artiste{
+                    background: $blue!important;
+                }
                 background-position: center center;
             }
             &:nth-child(27){
                 height: 25vw;
                 background-image: url(/assets/images/cards/rozeau.jpg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(28){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/Mutin_de_Perde_1_-_Mutin_de_Perde.jpg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(29){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/jivre.jpg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(30){
                 height: 25vw;
                 background-image: url(/assets/images/cards/lito.jpg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(31){
                 height: 25vw;
                 background-image: url(/assets/images/cards/cafard.png); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(32){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/krysten.jpeg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(33){
-                height: 25vw;
-                background-image: url(/assets/images/cards/melanie.jpg); 
+                height: 36vw;
+                background-image: url(/assets/images/cards/melanie.jpg);
+                .pill-artiste{
+                    background: $blue!important;
+                } 
             }
             &:nth-child(34){
                 height: 25vw;
                 background-image: url(/assets/images/cards/arts.png); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(35){
                 height: 25vw;
                 background-image: url(/assets/images/cards/lavande.png); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(36){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/anna.jpeg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(37){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/cmm.jpg); 
+                .pill-artiste{
+                    background: $green!important;
+                }
             }
             &:nth-child(38){
                 height: 25vw;
@@ -332,32 +419,47 @@
             &:nth-child(39){
                 height: 25vw;
                 background-image: url(/assets/images/cards/fee.png); 
+                .pill-artiste{
+                    background: $purple!important;
+                }
             }
             &:nth-child(40){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/patrick.png); 
             }
             &:nth-child(41){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/fredy.jpeg); 
             }
             &:nth-child(42){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/belou.png);
                 background-position: center center; 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(43){
                 height: 25vw;
-                background-image: url(/assets/images/cards/mo.jpg); 
+                background-image: url(/assets/images/cards/mo.jpg);
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(44){
-                height: 25vw;
+                height: 36vw;
                 background-image: url(/assets/images/cards/florent.jpg);
                 background-position: center center;  
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
             &:nth-child(45){
                 height: 25vw;
                 background-image: url(/assets/images/cards/laurie.jpg); 
+                .pill-artiste{
+                    background: $blue!important;
+                }
             }
         }
     }
