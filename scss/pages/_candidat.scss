@@ -22,6 +22,20 @@
         color: $green
     }
 
+    .notification-banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vw;
+        padding: 0.8vw;
+        border-radius: 4px;
+        background: #FFF3D2;
+        width: 70%;
+        svg{
+            height: 1.5vw!important;
+        }
+    }
+
     .text-hero-banner{
         color: $black;
         text-align: center;
@@ -337,6 +351,16 @@
                 font-size: 7vw!important;
                 width: 90%;
                 text-align: left;
+            }
+            .notification-banner{
+                flex-direction: column;
+                gap: 4vw;
+                padding: 2vw 1vw 2vw 1vw;
+                width: 90%;
+                margin: 4vw 0vw 4vw 0vw;
+                svg{
+                    height: 5vw!important;
+                }
             }
         }
 

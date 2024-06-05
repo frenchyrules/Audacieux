@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audacieux festival</title>
-    <link rel="icon" type="image/x-icon" href="/assets/images/Favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/khy1hxl.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audacieux festival</title>
+  <link rel="icon" type="image/x-icon" href="/assets/images/Favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/khy1hxl.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-    <main>
-      
+  <main>
+    
+      <!-- HEADER INSCRIPTIONS OUVERTES -->
+    <!-- <header>
+      <a id="Logo" class="logo" href="index.html">
+        <svg viewBox="0 0 52 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M37.2227 17.0908L32.8117 14.3788L27.8556 0H24.299L19.1993 14.3692L14.689 17.1306C6.00504 21.3186 0 30.1638 0 40.3848V79H52V40.3848C52 30.1295 45.9536 21.2596 37.2227 17.0908ZM23.159 17.5449L24.1996 14.6134L26.038 9.43363L27.8239 14.6148L28.8314 17.5367L33.5598 20.4448L33.2989 20.6053L29.7561 22.7891L28.841 23.3543L26.942 28.7056L26.0007 31.3558L25.0718 28.7385L23.1603 23.3529L22.2646 22.8001L18.7024 20.6039L18.4333 20.4379L23.1603 17.5449H23.159ZM33.8883 46.2957L11.1157 66.4154L9.69281 67.6733L22.393 35.5219L24.3003 40.8951H27.7024L29.6208 35.489L33.2479 44.6702L33.891 46.2971L33.8883 46.2957ZM4.79603 67.0245V40.3848C4.79603 34.6165 7.14091 29.3819 10.9322 25.5738C11.3959 25.1088 11.8817 24.6657 12.3855 24.2446C12.6394 24.032 12.8989 23.8262 13.1625 23.6259C13.364 23.4723 13.5683 23.3214 13.7767 23.176L19.1979 26.519L19.9529 28.648L4.79603 67.0245ZM44.9253 74.2331H9.48441L35.757 51.0215L44.9253 74.2331ZM47.2054 66.9614L37.7113 42.9267L32.0582 28.6164L32.8021 26.5203L38.2233 23.1774C43.6528 26.9964 47.2054 33.2845 47.2054 40.3848V66.9614Z" />
+        </svg>
+      </a>
+      <section class="header-section2">
+        <div class="link">DEUXIÈME ÉDITION / 29.06.2024</div>
+        <div>
+          <a class="tertiary-btn" href="edition.html">Édition 2024</a>
+          <a class="tertiary-btn" href="about.html">À propos</a>
+        </div>
+      </section>
+      <section class="header-section3">
+        <a class="primary-btn" href="candidat.html">Candidature artiste</a>
+        <a class="primary-btn" href="partenaire.html">Devenir partenaire</a>
+      </section>
+    </header> -->
+
+    <!-- HEADER INSCRIPTIONS CLOTUREES -->
     <header>
-        <a id="Logo" class="logo" href="index.html">
-            <svg viewBox="0 0 52 79" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M37.2227 17.0908L32.8117 14.3788L27.8556 0H24.299L19.1993 14.3692L14.689 17.1306C6.00504 21.3186 0 30.1638 0 40.3848V79H52V40.3848C52 30.1295 45.9536 21.2596 37.2227 17.0908ZM23.159 17.5449L24.1996 14.6134L26.038 9.43363L27.8239 14.6148L28.8314 17.5367L33.5598 20.4448L33.2989 20.6053L29.7561 22.7891L28.841 23.3543L26.942 28.7056L26.0007 31.3558L25.0718 28.7385L23.1603 23.3529L22.2646 22.8001L18.7024 20.6039L18.4333 20.4379L23.1603 17.5449H23.159ZM33.8883 46.2957L11.1157 66.4154L9.69281 67.6733L22.393 35.5219L24.3003 40.8951H27.7024L29.6208 35.489L33.2479 44.6702L33.891 46.2971L33.8883 46.2957ZM4.79603 67.0245V40.3848C4.79603 34.6165 7.14091 29.3819 10.9322 25.5738C11.3959 25.1088 11.8817 24.6657 12.3855 24.2446C12.6394 24.032 12.8989 23.8262 13.1625 23.6259C13.364 23.4723 13.5683 23.3214 13.7767 23.176L19.1979 26.519L19.9529 28.648L4.79603 67.0245ZM44.9253 74.2331H9.48441L35.757 51.0215L44.9253 74.2331ZM47.2054 66.9614L37.7113 42.9267L32.0582 28.6164L32.8021 26.5203L38.2233 23.1774C43.6528 26.9964 47.2054 33.2845 47.2054 40.3848V66.9614Z"/>
-            </svg>
-        </a>
-        <section class="header-section2">
-            <div class="link">DEUXIÈME ÉDITION / 29.06.2024</div>
-            <div>
-                <a class="tertiary-btn" href="edition.html">Édition 2024</a>
-                <!-- <a class="tertiary-btn" href="galerie.html">Galerie</a> -->
-                <a class="tertiary-btn" href="about.html">À propos</a>
-            </div>
-        </section>
-        <section class="header-section3">
-            <a class="primary-btn" href="candidat.html">Candidature artiste</a>
-            <a class="primary-btn" href="partenaire.html">Devenir partenaire</a>
-        </section>
+      <a id="Logo" class="logo" href="index.html">
+        <svg viewBox="0 0 52 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M37.2227 17.0908L32.8117 14.3788L27.8556 0H24.299L19.1993 14.3692L14.689 17.1306C6.00504 21.3186 0 30.1638 0 40.3848V79H52V40.3848C52 30.1295 45.9536 21.2596 37.2227 17.0908ZM23.159 17.5449L24.1996 14.6134L26.038 9.43363L27.8239 14.6148L28.8314 17.5367L33.5598 20.4448L33.2989 20.6053L29.7561 22.7891L28.841 23.3543L26.942 28.7056L26.0007 31.3558L25.0718 28.7385L23.1603 23.3529L22.2646 22.8001L18.7024 20.6039L18.4333 20.4379L23.1603 17.5449H23.159ZM33.8883 46.2957L11.1157 66.4154L9.69281 67.6733L22.393 35.5219L24.3003 40.8951H27.7024L29.6208 35.489L33.2479 44.6702L33.891 46.2971L33.8883 46.2957ZM4.79603 67.0245V40.3848C4.79603 34.6165 7.14091 29.3819 10.9322 25.5738C11.3959 25.1088 11.8817 24.6657 12.3855 24.2446C12.6394 24.032 12.8989 23.8262 13.1625 23.6259C13.364 23.4723 13.5683 23.3214 13.7767 23.176L19.1979 26.519L19.9529 28.648L4.79603 67.0245ZM44.9253 74.2331H9.48441L35.757 51.0215L44.9253 74.2331ZM47.2054 66.9614L37.7113 42.9267L32.0582 28.6164L32.8021 26.5203L38.2233 23.1774C43.6528 26.9964 47.2054 33.2845 47.2054 40.3848V66.9614Z" />
+        </svg>
+      </a>
+      <section class="header-section2">
+        <div class="link">DEUXIÈME ÉDITION / 29.06.2024</div>
+        <div>
+          <a class="tertiary-btn" href="candidat.html">Candidature artiste</a>
+          <!-- <a class="tertiary-btn" href="galerie.html">Galerie</a> -->
+          <a class="tertiary-btn" href="partenaire.html">Devenir partenaire</a>
+        </div>
+      </section>
+      <section class="header-section3">
+        <a class="primary-btn" href="edition.html">Édition 2024</a>
+        <a class="primary-btn" href="about.html">À propos</a>
+      </section>
     </header>
 
     <a id="mobile-logo" href="index.html">
       <svg viewBox="0 0 52 79" fill="black" xmlns="http://www.w3.org/2000/svg">
-      <path d="M37.2227 17.0908L32.8117 14.3788L27.8556 0H24.299L19.1993 14.3692L14.689 17.1306C6.00504 21.3186 0 30.1638 0 40.3848V79H52V40.3848C52 30.1295 45.9536 21.2596 37.2227 17.0908ZM23.159 17.5449L24.1996 14.6134L26.038 9.43363L27.8239 14.6148L28.8314 17.5367L33.5598 20.4448L33.2989 20.6053L29.7561 22.7891L28.841 23.3543L26.942 28.7056L26.0007 31.3558L25.0718 28.7385L23.1603 23.3529L22.2646 22.8001L18.7024 20.6039L18.4333 20.4379L23.1603 17.5449H23.159ZM33.8883 46.2957L11.1157 66.4154L9.69281 67.6733L22.393 35.5219L24.3003 40.8951H27.7024L29.6208 35.489L33.2479 44.6702L33.891 46.2971L33.8883 46.2957ZM4.79603 67.0245V40.3848C4.79603 34.6165 7.14091 29.3819 10.9322 25.5738C11.3959 25.1088 11.8817 24.6657 12.3855 24.2446C12.6394 24.032 12.8989 23.8262 13.1625 23.6259C13.364 23.4723 13.5683 23.3214 13.7767 23.176L19.1979 26.519L19.9529 28.648L4.79603 67.0245ZM44.9253 74.2331H9.48441L35.757 51.0215L44.9253 74.2331ZM47.2054 66.9614L37.7113 42.9267L32.0582 28.6164L32.8021 26.5203L38.2233 23.1774C43.6528 26.9964 47.2054 33.2845 47.2054 40.3848V66.9614Z"/>
+        <path
+          d="M37.2227 17.0908L32.8117 14.3788L27.8556 0H24.299L19.1993 14.3692L14.689 17.1306C6.00504 21.3186 0 30.1638 0 40.3848V79H52V40.3848C52 30.1295 45.9536 21.2596 37.2227 17.0908ZM23.159 17.5449L24.1996 14.6134L26.038 9.43363L27.8239 14.6148L28.8314 17.5367L33.5598 20.4448L33.2989 20.6053L29.7561 22.7891L28.841 23.3543L26.942 28.7056L26.0007 31.3558L25.0718 28.7385L23.1603 23.3529L22.2646 22.8001L18.7024 20.6039L18.4333 20.4379L23.1603 17.5449H23.159ZM33.8883 46.2957L11.1157 66.4154L9.69281 67.6733L22.393 35.5219L24.3003 40.8951H27.7024L29.6208 35.489L33.2479 44.6702L33.891 46.2971L33.8883 46.2957ZM4.79603 67.0245V40.3848C4.79603 34.6165 7.14091 29.3819 10.9322 25.5738C11.3959 25.1088 11.8817 24.6657 12.3855 24.2446C12.6394 24.032 12.8989 23.8262 13.1625 23.6259C13.364 23.4723 13.5683 23.3214 13.7767 23.176L19.1979 26.519L19.9529 28.648L4.79603 67.0245ZM44.9253 74.2331H9.48441L35.757 51.0215L44.9253 74.2331ZM47.2054 66.9614L37.7113 42.9267L32.0582 28.6164L32.8021 26.5203L38.2233 23.1774C43.6528 26.9964 47.2054 33.2845 47.2054 40.3848V66.9614Z" />
       </svg>
     </a>
 
@@ -46,7 +72,7 @@
         so you can use the :checked selector on it.
         -->
         <input type="checkbox" />
-        
+
         <!--
         Some spans to act as a hamburger.
         
@@ -56,129 +82,148 @@
         <span></span>
         <span></span>
         <span></span>
-        
+
         <!--
         Too bad the menu has to be inside of the button
         but hey, it's pure CSS magic.
         -->
         <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="edition.html"><li>Edition</li></a>
-          <a href="candidat.html"><li>Candidature artiste</li></a>
-          <a href="partenaire.html"><li>Devenir partenaire</li></a>
-          <a href="about.html"><li>A propos</li></a>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="edition.html">
+            <li>Edition</li>
+          </a>
+          <a href="candidat.html">
+            <li>Candidature artiste</li>
+          </a>
+          <a href="partenaire.html">
+            <li>Devenir partenaire</li>
+          </a>
+          <a href="about.html">
+            <li>A propos</li>
+          </a>
         </ul>
       </div>
     </nav>
 
-      <section class="hero-banner">
-        <h1>Audacieux<br>Festival</h1>
-        <p>le grand retour :<br>l'édition 2024 c’est pour bientôt !</p>
+    <section class="hero-banner">
+      <h1>Audacieux<br>Festival</h1>
+      <p>le grand retour :<br>l'édition 2024 c’est pour bientôt !</p>
 
-        <div class="countdown-wrapper-small">
-            <div class="countdown-box">
-              <div class="countdown-text">
-                <span id="months-number" class="number"></span>
-                <span id="months-unit" class="unit"></span>
-              </div>
-            </div>
-            <div class="countdown-box">
-              <div class="countdown-text">
-                <span id="days-number" class="number"></span>
-                <span id="days-unit" class="unit"></span>
-              </div>
-            </div>
-            <div class="countdown-box">
-              <div class="countdown-text">
-                <span id="hours-number" class="number"></span>
-                <span id="hours-unit" class="unit"></span>
-              </div>
-            </div>
-            <div class="countdown-box">
-              <div class="countdown-text">
-                <span id="minutes-number" class="number"></span>
-                <span id="minutes-unit" class="unit"></span>
-              </div>
-            </div>
-            <div class="countdown-box">
-              <div class="countdown-text">
-                <span id="seconds-number" class="number"></span>
-                <span id="seconds-unit" class="unit"></span>
-              </div>
-            </div>
+      <div class="countdown-wrapper-small">
+        <div class="countdown-box">
+          <div class="countdown-text">
+            <span id="months-number" class="number"></span>
+            <span id="months-unit" class="unit"></span>
+          </div>
         </div>
-        
-        <script>
-          // GSAP configuration
-          gsap.registerPlugin(ScrollTrigger);
-  
-          // Animation
-          gsap.to(".countdown-wrapper-small", {
-              opacity: 0,
-              scrollTrigger: {
-                  trigger: ".home-section4",
-                  start: "top 50%", // Disappear when the top of .home-section4 is 30% from the top of the viewport
-                  end: "bottom top", // Reappear when the bottom of .home-section4 is at the top of the viewport
-                  toggleActions: "reverse play reverse play",
-              },
-          });
+        <div class="countdown-box">
+          <div class="countdown-text">
+            <span id="days-number" class="number"></span>
+            <span id="days-unit" class="unit"></span>
+          </div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-text">
+            <span id="hours-number" class="number"></span>
+            <span id="hours-unit" class="unit"></span>
+          </div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-text">
+            <span id="minutes-number" class="number"></span>
+            <span id="minutes-unit" class="unit"></span>
+          </div>
+        </div>
+        <div class="countdown-box">
+          <div class="countdown-text">
+            <span id="seconds-number" class="number"></span>
+            <span id="seconds-unit" class="unit"></span>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // GSAP configuration
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animation
+        gsap.to(".countdown-wrapper-small", {
+          opacity: 0,
+          scrollTrigger: {
+            trigger: ".home-section4",
+            start: "top 50%", // Disappear when the top of .home-section4 is 30% from the top of the viewport
+            end: "bottom top", // Reappear when the bottom of .home-section4 is at the top of the viewport
+            toggleActions: "reverse play reverse play",
+          },
+        });
       </script>
 
-        <div class="countdown-wrapper-big">
-            <div class="countdown-box-big">
-              <div class="countdown-text-big">
-                <span id="months-number-big" class="number-big"></span>
-                <span id="months-unit-big" class="unit-big"></span>
-              </div>
-            </div>
-            <div class="countdown-box-big">
-              <div class="countdown-text-big">
-                <span id="days-number-big" class="number-big"></span>
-                <span id="days-unit-big" class="unit-big"></span>
-              </div>
-            </div>
-            <div class="countdown-box-big">
-              <div class="countdown-text-big">
-                <span id="hours-number-big" class="number-big"></span>
-                <span id="hours-unit-big" class="unit-big"></span>
-              </div>
-            </div>
-            <div class="countdown-box-big">
-              <div class="countdown-text-big">
-                <span id="minutes-number-big" class="number-big"></span>
-                <span id="minutes-unit-big" class="unit-big"></span>
-              </div>
-            </div>
-            <div class="countdown-box-big">
-              <div class="countdown-text-big">
-                <span id="seconds-number-big" class="number-big"></span>
-                <span id="seconds-unit-big" class="unit-big"></span>
-              </div>
-            </div>
+      <div class="countdown-wrapper-big">
+        <div class="countdown-box-big">
+          <div class="countdown-text-big">
+            <span id="months-number-big" class="number-big"></span>
+            <span id="months-unit-big" class="unit-big"></span>
+          </div>
         </div>
+        <div class="countdown-box-big">
+          <div class="countdown-text-big">
+            <span id="days-number-big" class="number-big"></span>
+            <span id="days-unit-big" class="unit-big"></span>
+          </div>
+        </div>
+        <div class="countdown-box-big">
+          <div class="countdown-text-big">
+            <span id="hours-number-big" class="number-big"></span>
+            <span id="hours-unit-big" class="unit-big"></span>
+          </div>
+        </div>
+        <div class="countdown-box-big">
+          <div class="countdown-text-big">
+            <span id="minutes-number-big" class="number-big"></span>
+            <span id="minutes-unit-big" class="unit-big"></span>
+          </div>
+        </div>
+        <div class="countdown-box-big">
+          <div class="countdown-text-big">
+            <span id="seconds-number-big" class="number-big"></span>
+            <span id="seconds-unit-big" class="unit-big"></span>
+          </div>
+        </div>
+      </div>
 
 
-        <svg class="heroshape-blue" viewBox="0 0 328 468" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M82.0056 245.592C78.2623 237.213 74.4568 228.605 73.9282 219.443C73.3997 210.28 76.8507 200.31 84.7167 195.589C93.3661 190.401 104.36 192.815 114.358 191.527C127.553 189.823 139.585 180.903 145.045 168.768C149.603 158.654 149.864 146.656 156.293 137.618C164.769 125.701 180.805 122.802 194.361 117.335C228.299 103.632 250.28 70.5851 265.888 37.4697C270.334 28.0402 274.568 18.2561 281.707 10.6615C288.845 3.06681 299.708 -2.0025 309.75 0.765408C321.888 4.118 328.728 17.9824 327.938 30.5531C327.155 43.1237 320.508 54.5188 313.4 64.9125C299.683 84.9782 283.553 103.396 265.471 119.636C253.234 130.627 238.752 144 241.531 160.209C244.852 179.541 268.835 185.575 285.307 196.211C302.133 207.077 313.201 226.851 312.356 246.867C311.51 266.883 298.147 286.146 279.244 292.77C268.574 296.509 256.691 296.397 246.506 301.298C236.314 306.193 228.579 319.697 235.344 328.753C254.919 325.506 274.935 309.776 292.377 319.237C304.142 325.618 307.897 341.765 303.551 354.429C299.204 367.087 288.659 376.641 277.453 383.956C257.754 396.825 232.036 404.445 210.745 394.437C199.752 389.268 190.897 379.838 179.282 376.268C154.235 368.574 130.271 390.748 115.894 412.661C101.524 434.581 87.2474 460.655 61.7842 466.831C38.9451 472.373 14.0104 457.563 4.733 435.968C-4.54443 414.365 0.454933 388.272 14.1721 369.183C27.8893 350.094 49.2609 337.505 71.7643 330.725C92.6012 324.449 116.69 321.563 130.314 304.588C139.909 292.634 143.907 274.216 158.52 269.601C171.671 265.446 188.124 275.05 198.813 266.341C205.404 260.974 205.914 250.431 201.605 243.104C197.296 235.776 189.324 231.304 181.197 228.841C167.405 224.661 152.171 225.432 138.876 230.993C129.475 234.924 121.142 241.101 111.741 245.032C102.339 248.963 90.9099 250.337 82.3911 244.746" fill="#419EC2"/>
-            </svg>
-        <svg class="heroshape-green" viewBox="0 0 444 396" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M62.8671 299.876C65.9691 298.588 68.8947 296.91 71.5239 294.824C76.5977 290.8 76.4292 288.726 81.77 280.256C85.9968 273.546 89.3777 266.013 89.5377 258.091C89.6977 250.169 86.0961 241.837 79.1532 238.007C69.6342 232.756 57.6033 237.317 48.7963 243.705C24.1048 261.605 11.6431 291.842 4.4253 321.43C0.263522 338.49 -2.43432 357.05 4.62313 373.118C11.6806 389.185 31.9117 400.517 47.4634 392.309C59.5021 385.956 64.0314 371.455 69.2685 358.913C76.8064 340.857 87.9623 324.309 101.895 310.538C103.45 308.998 105.523 308.032 107.713 307.961C111.838 307.825 113.292 310.935 114.28 313.833C117.592 323.552 118.212 334.119 122.344 343.521C126.477 352.922 135.974 361.347 146.063 359.317C150.182 358.488 153.78 356.039 157.048 353.402C188.464 328.017 201.011 280.342 238.87 266.227C263.454 257.064 290.721 265.518 316.951 264.988C343.825 264.444 370.393 253.924 390.343 235.92C405.665 222.093 417.18 198.431 405.517 181.441C397.76 170.143 382.857 166.542 372.06 158.092C369.03 155.718 366.182 152.714 365.435 148.944C364.287 143.153 368.545 137.452 373.733 134.614C378.929 131.779 384.951 131.022 390.69 129.578C410.053 124.707 427.071 111.173 436.151 93.4177C445.235 75.6547 446.227 53.9762 438.809 35.4824C432.347 19.3701 418.903 5.4222 401.958 1.50167C383.438 -2.78332 361.425 7.26415 356.782 26.3112C355.995 29.5279 356.764 33.0007 359.037 35.4017C364.717 41.4021 373.939 35.4516 381.793 36.2482C391.066 37.1883 396.637 48.3539 394.448 57.4038C392.259 66.4537 384.611 73.215 376.492 77.801C365.491 84.0112 353.014 87.3617 342.289 94.0191C331.557 100.678 322.34 112.285 324.001 124.775C324.919 131.685 328.977 137.694 332.22 143.862C338.081 155.005 341.507 168.05 338.434 180.266C335.362 192.482 324.485 203.238 311.869 203.229C295.846 203.226 284.338 187.552 269.025 182.857C247.478 176.252 225.569 193.011 212.921 211.667C200.273 230.322 191.67 252.519 173.91 266.407C171.686 268.143 169.232 269.775 166.435 270.177C159.291 271.197 153.754 264.139 150.764 257.588C147.767 251.038 144.863 243.359 138.112 240.833C127.385 236.824 117.929 248.62 111.801 258.295C100.222 276.582 85.9273 293.153 69.5248 307.292C64.3819 311.723 56.8446 315.898 51.0587 313.927C48.8473 313.174 47.8115 310.751 48.8096 308.643C50.4825 305.101 53.1168 302.535 56.9643 301.77C57.9892 301.564 59.7741 301.127 60.7374 300.725L62.8575 299.845L62.8671 299.876Z" fill="#009873"/>
-        </svg>
-        <svg class="heroshape-orange" viewBox="0 0 337 442" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M258.161 412.109C260.445 421.206 267.278 428.622 275.22 433.586C286.457 440.613 300.765 443.305 313.307 438.994C325.851 434.678 335.922 422.717 336.295 409.449C336.664 396.174 326.007 383.022 312.776 382.235C308.099 381.957 303.29 383.08 298.774 381.83C285.633 378.199 285.279 359.863 278.236 348.178C266.842 329.282 239.625 330.239 219.643 320.919C216.746 319.566 213.743 317.716 212.702 314.685C211.313 310.649 213.923 306.472 215.825 302.645C222.814 288.563 220.5 270.935 211.983 257.748C203.465 244.561 189.476 235.561 174.52 230.811C165.051 227.808 155.133 226.359 145.762 223.062C140.835 221.325 135.893 218.936 132.699 214.801C125.989 206.103 129.291 193.622 132.888 183.221C134.14 179.594 135.559 175.743 138.647 173.464C143.442 169.935 150.119 171.565 155.792 173.343C197.021 186.257 238.244 199.17 279.475 212.079C283.042 213.196 286.783 214.325 290.467 213.672C297.421 212.438 301.69 205.507 304.798 199.155C317.306 173.549 325.693 145.937 329.545 117.703C310.246 110.54 290.947 103.377 271.65 96.2086C287.639 93.6323 301.371 80.388 304.541 64.4874C307.712 48.5814 300.107 31.0984 286.328 22.6119C269.992 12.5489 245.566 17.2739 235.905 33.8891C226.666 49.7715 232.257 70.5084 242.694 85.5998C202.603 76.8932 162.506 68.1845 122.415 59.4779C126.159 45.9019 129.91 32.3227 133.654 18.7467C108.174 12.71 82.6898 6.67112 57.2106 0.634377C55.2033 0.160432 52.9128 -0.264651 51.235 0.942066C49.9866 1.83718 49.4454 3.40387 48.9768 4.86363C33.2886 53.6427 17.595 102.42 1.90466 151.204C0.642933 155.123 -0.622344 159.348 0.602724 163.27C2.21957 168.448 7.57645 171.375 12.5591 173.504C28.9626 180.515 46.5757 184.695 64.3825 185.8C69.4864 186.116 74.956 186.3 79.0622 189.346C85.9657 194.469 85.6236 204.621 86.8805 213.142C88.9287 227.003 97.2827 239.794 109.136 247.223C122.991 255.906 140.539 257.216 154.204 266.194C166.885 274.52 175.017 289.378 175.221 304.572C175.357 314.838 172.134 324.832 170.863 335.02C169.592 345.208 170.712 356.612 177.929 363.896C195.112 381.223 229.807 362.029 247.139 379.212C255.351 387.354 255.751 400.297 255.621 411.881" fill="#FBBC0C"/>
-        </svg>
-            
-                
-            
+      <svg class="heroshape-blue" viewBox="0 0 328 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M82.0056 245.592C78.2623 237.213 74.4568 228.605 73.9282 219.443C73.3997 210.28 76.8507 200.31 84.7167 195.589C93.3661 190.401 104.36 192.815 114.358 191.527C127.553 189.823 139.585 180.903 145.045 168.768C149.603 158.654 149.864 146.656 156.293 137.618C164.769 125.701 180.805 122.802 194.361 117.335C228.299 103.632 250.28 70.5851 265.888 37.4697C270.334 28.0402 274.568 18.2561 281.707 10.6615C288.845 3.06681 299.708 -2.0025 309.75 0.765408C321.888 4.118 328.728 17.9824 327.938 30.5531C327.155 43.1237 320.508 54.5188 313.4 64.9125C299.683 84.9782 283.553 103.396 265.471 119.636C253.234 130.627 238.752 144 241.531 160.209C244.852 179.541 268.835 185.575 285.307 196.211C302.133 207.077 313.201 226.851 312.356 246.867C311.51 266.883 298.147 286.146 279.244 292.77C268.574 296.509 256.691 296.397 246.506 301.298C236.314 306.193 228.579 319.697 235.344 328.753C254.919 325.506 274.935 309.776 292.377 319.237C304.142 325.618 307.897 341.765 303.551 354.429C299.204 367.087 288.659 376.641 277.453 383.956C257.754 396.825 232.036 404.445 210.745 394.437C199.752 389.268 190.897 379.838 179.282 376.268C154.235 368.574 130.271 390.748 115.894 412.661C101.524 434.581 87.2474 460.655 61.7842 466.831C38.9451 472.373 14.0104 457.563 4.733 435.968C-4.54443 414.365 0.454933 388.272 14.1721 369.183C27.8893 350.094 49.2609 337.505 71.7643 330.725C92.6012 324.449 116.69 321.563 130.314 304.588C139.909 292.634 143.907 274.216 158.52 269.601C171.671 265.446 188.124 275.05 198.813 266.341C205.404 260.974 205.914 250.431 201.605 243.104C197.296 235.776 189.324 231.304 181.197 228.841C167.405 224.661 152.171 225.432 138.876 230.993C129.475 234.924 121.142 241.101 111.741 245.032C102.339 248.963 90.9099 250.337 82.3911 244.746"
+          fill="#419EC2" />
+      </svg>
+      <svg class="heroshape-green" viewBox="0 0 444 396" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M62.8671 299.876C65.9691 298.588 68.8947 296.91 71.5239 294.824C76.5977 290.8 76.4292 288.726 81.77 280.256C85.9968 273.546 89.3777 266.013 89.5377 258.091C89.6977 250.169 86.0961 241.837 79.1532 238.007C69.6342 232.756 57.6033 237.317 48.7963 243.705C24.1048 261.605 11.6431 291.842 4.4253 321.43C0.263522 338.49 -2.43432 357.05 4.62313 373.118C11.6806 389.185 31.9117 400.517 47.4634 392.309C59.5021 385.956 64.0314 371.455 69.2685 358.913C76.8064 340.857 87.9623 324.309 101.895 310.538C103.45 308.998 105.523 308.032 107.713 307.961C111.838 307.825 113.292 310.935 114.28 313.833C117.592 323.552 118.212 334.119 122.344 343.521C126.477 352.922 135.974 361.347 146.063 359.317C150.182 358.488 153.78 356.039 157.048 353.402C188.464 328.017 201.011 280.342 238.87 266.227C263.454 257.064 290.721 265.518 316.951 264.988C343.825 264.444 370.393 253.924 390.343 235.92C405.665 222.093 417.18 198.431 405.517 181.441C397.76 170.143 382.857 166.542 372.06 158.092C369.03 155.718 366.182 152.714 365.435 148.944C364.287 143.153 368.545 137.452 373.733 134.614C378.929 131.779 384.951 131.022 390.69 129.578C410.053 124.707 427.071 111.173 436.151 93.4177C445.235 75.6547 446.227 53.9762 438.809 35.4824C432.347 19.3701 418.903 5.4222 401.958 1.50167C383.438 -2.78332 361.425 7.26415 356.782 26.3112C355.995 29.5279 356.764 33.0007 359.037 35.4017C364.717 41.4021 373.939 35.4516 381.793 36.2482C391.066 37.1883 396.637 48.3539 394.448 57.4038C392.259 66.4537 384.611 73.215 376.492 77.801C365.491 84.0112 353.014 87.3617 342.289 94.0191C331.557 100.678 322.34 112.285 324.001 124.775C324.919 131.685 328.977 137.694 332.22 143.862C338.081 155.005 341.507 168.05 338.434 180.266C335.362 192.482 324.485 203.238 311.869 203.229C295.846 203.226 284.338 187.552 269.025 182.857C247.478 176.252 225.569 193.011 212.921 211.667C200.273 230.322 191.67 252.519 173.91 266.407C171.686 268.143 169.232 269.775 166.435 270.177C159.291 271.197 153.754 264.139 150.764 257.588C147.767 251.038 144.863 243.359 138.112 240.833C127.385 236.824 117.929 248.62 111.801 258.295C100.222 276.582 85.9273 293.153 69.5248 307.292C64.3819 311.723 56.8446 315.898 51.0587 313.927C48.8473 313.174 47.8115 310.751 48.8096 308.643C50.4825 305.101 53.1168 302.535 56.9643 301.77C57.9892 301.564 59.7741 301.127 60.7374 300.725L62.8575 299.845L62.8671 299.876Z"
+          fill="#009873" />
+      </svg>
+      <svg class="heroshape-orange" viewBox="0 0 337 442" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M258.161 412.109C260.445 421.206 267.278 428.622 275.22 433.586C286.457 440.613 300.765 443.305 313.307 438.994C325.851 434.678 335.922 422.717 336.295 409.449C336.664 396.174 326.007 383.022 312.776 382.235C308.099 381.957 303.29 383.08 298.774 381.83C285.633 378.199 285.279 359.863 278.236 348.178C266.842 329.282 239.625 330.239 219.643 320.919C216.746 319.566 213.743 317.716 212.702 314.685C211.313 310.649 213.923 306.472 215.825 302.645C222.814 288.563 220.5 270.935 211.983 257.748C203.465 244.561 189.476 235.561 174.52 230.811C165.051 227.808 155.133 226.359 145.762 223.062C140.835 221.325 135.893 218.936 132.699 214.801C125.989 206.103 129.291 193.622 132.888 183.221C134.14 179.594 135.559 175.743 138.647 173.464C143.442 169.935 150.119 171.565 155.792 173.343C197.021 186.257 238.244 199.17 279.475 212.079C283.042 213.196 286.783 214.325 290.467 213.672C297.421 212.438 301.69 205.507 304.798 199.155C317.306 173.549 325.693 145.937 329.545 117.703C310.246 110.54 290.947 103.377 271.65 96.2086C287.639 93.6323 301.371 80.388 304.541 64.4874C307.712 48.5814 300.107 31.0984 286.328 22.6119C269.992 12.5489 245.566 17.2739 235.905 33.8891C226.666 49.7715 232.257 70.5084 242.694 85.5998C202.603 76.8932 162.506 68.1845 122.415 59.4779C126.159 45.9019 129.91 32.3227 133.654 18.7467C108.174 12.71 82.6898 6.67112 57.2106 0.634377C55.2033 0.160432 52.9128 -0.264651 51.235 0.942066C49.9866 1.83718 49.4454 3.40387 48.9768 4.86363C33.2886 53.6427 17.595 102.42 1.90466 151.204C0.642933 155.123 -0.622344 159.348 0.602724 163.27C2.21957 168.448 7.57645 171.375 12.5591 173.504C28.9626 180.515 46.5757 184.695 64.3825 185.8C69.4864 186.116 74.956 186.3 79.0622 189.346C85.9657 194.469 85.6236 204.621 86.8805 213.142C88.9287 227.003 97.2827 239.794 109.136 247.223C122.991 255.906 140.539 257.216 154.204 266.194C166.885 274.52 175.017 289.378 175.221 304.572C175.357 314.838 172.134 324.832 170.863 335.02C169.592 345.208 170.712 356.612 177.929 363.896C195.112 381.223 229.807 362.029 247.139 379.212C255.351 387.354 255.751 400.297 255.621 411.881"
+          fill="#FBBC0C" />
+      </svg>
+
+
+
     </section>
 
     <section class="home-section2">
-        <img src="/assets/images/homeimg.webp" alt="">
-        <div class="wrapper">
-            <h3>Le festival aux multiples couleurs</h3>
-            <p>Nous sommes les Audacieux, un festival artistique associatif ancré à Lyon.<br> Notre but ? <span>Mettre à l'honneur la diversité artistique, encourager l'ouverture d'esprit, en soutenant nos talents émergents lyonnais.</span> L'idée n'est pas seulement de mettre en place un événement, mais de forger une communauté de passionnés, prêts à créer, à découvrir et à s'engager !</p>
-            <a class="secondary-btn" href="about.html">JE VEUX EN SAVOIR PLUS !</a>
-        </div>
+      <img src="/assets/images/homeimg.webp" alt="">
+      <div class="wrapper">
+        <h3>Le festival aux multiples couleurs</h3>
+        <p>Nous sommes les Audacieux, un festival artistique associatif ancré à Lyon.<br> Notre but ? <span>Mettre à
+            l'honneur la diversité artistique, encourager l'ouverture d'esprit, en soutenant nos talents émergents
+            lyonnais.</span> L'idée n'est pas seulement de mettre en place un événement, mais de forger une communauté
+          de passionnés, prêts à créer, à découvrir et à s'engager !</p>
+        <a class="secondary-btn" href="about.html">JE VEUX EN SAVOIR PLUS !</a>
+      </div>
     </section>
 
     <section class="home-section3">
@@ -187,7 +232,11 @@
         <h2>ORIGINES</h2>
         <h3>Édition 2024</h3>
         <h4>Là où les voies se croisent,<br> l’Origine résonne.</h4>
-        <p>Cette année, embarque avec nous <span>à la découverte des origines de nos artistes. </span>Plonge dans des univers variés où chaque œuvre renferme une histoire, une volonté, un progrès ou même une page tournée. Elle te révélera avec subtilité l’histoire de l’artiste qui l’a façonnée. Prépare-toi, car c'est dès maintenant que la porte de l’audace s'ouvre à toi. Nous te réservons des surprises, des émotions, et surtout, un voyage mémorable.</p>
+        <p>Cette année, embarque avec nous <span>à la découverte des origines de nos artistes. </span>Plonge dans des
+          univers variés où chaque œuvre renferme une histoire, une volonté, un progrès ou même une page tournée. Elle
+          te révélera avec subtilité l’histoire de l’artiste qui l’a façonnée. Prépare-toi, car c'est dès maintenant que
+          la porte de l’audace s'ouvre à toi. Nous te réservons des surprises, des émotions, et surtout, un voyage
+          mémorable.</p>
         <a class="secondary-btn" href="edition.html">Découvrir l’ÉDITION de cette année</a>
       </div>
     </section>
@@ -195,9 +244,11 @@
     <section class="village-artistique">
       <div class="stroke-wrapper">
         <h2>✨</h2>
-        <h2>découvrez le<br> 
+        <h2>découvrez le<br>
           village artistique</h2>
-        <p>Le village artistique, c'est <span>le battement de coeur de notre festival</span>. Viens rencontrer nos artistes, nos spots de restauration, nos partenaires et les animations du festival. Alors, embarque dans l'essence même du festival en visitant le village dès maintenant!</p>
+        <p>Le village artistique, c'est <span>le battement de coeur de notre festival</span>. Viens rencontrer nos
+          artistes, nos spots de restauration, nos partenaires et les animations du festival. Alors, embarque dans
+          l'essence même du festival en visitant le village dès maintenant!</p>
         <a class="secondary-btn" href="edition.html">Découvrir le village artistique</a>
         <div class="card-village-artistique1 hide-card"></div>
         <div class="card-village-artistique2 hide-card"></div>
@@ -217,8 +268,11 @@
       <div class="column-right">
         <img src="/assets/images/mekanika main.png" alt="">
         <h3>NOTRE PARTENAIRE DE TÊTE</h3>
-        <p>Nous sommes fiers de présenter notre partenaire de choix, MEKANIKA : Outils & Machines pour Makers. Avec leur engagement envers la qualité, l'accessibilité et l'innovation, MEKANIKA propose des outils de sérigraphie et de fraisage numérique open source, réparables et modulaires.</p>
-        <p>Pour en savoir plus sur MEKANIKA et leur gamme d'outils conçus pour les makers les plus exigeants, visitez leur site web :</p>
+        <p>Nous sommes fiers de présenter notre partenaire de choix, MEKANIKA : Outils & Machines pour Makers. Avec leur
+          engagement envers la qualité, l'accessibilité et l'innovation, MEKANIKA propose des outils de sérigraphie et
+          de fraisage numérique open source, réparables et modulaires.</p>
+        <p>Pour en savoir plus sur MEKANIKA et leur gamme d'outils conçus pour les makers les plus exigeants, visitez
+          leur site web :</p>
         <a class="secondary-btn" href="https://www.mekanika.io/">VOIR LEUR SITE INTERNET</a>
       </div>
     </section>
@@ -228,7 +282,10 @@
         <h2>✍🏻</h2>
         <h2>CANDIDATER</h2>
         <h3>Rejoins nos artistes !</h3>
-        <p>Prêt à faire vibrer le festival de ton talent ? Que tu sois musicien, artiste visuel, danseur, ou autre, nous voulons te découvrir ! Clique ci-dessous, partage nous ton art, et rejoins notre village artistique.<span>"Whirling winds whisper through willows, dancing leaves embrace the autumn symphony."</span></p>
+        <p>Prêt à faire vibrer le festival de ton talent ? Que tu sois musicien, artiste visuel, danseur, ou autre, nous
+          voulons te découvrir ! Clique ci-dessous, partage nous ton art, et rejoins notre village
+          artistique.<span>"Whirling winds whisper through willows, dancing leaves embrace the autumn symphony."</span>
+        </p>
         <div class="button-wrapper">
           <a class="secondary-btn" href="candidat.html">Je deviens un audacieux !</a>
         </div>
@@ -238,15 +295,18 @@
         <h2>🤲🏻</h2>
         <h2>CONTRIBUER</h2>
         <h3>Soutient le festival !</h3>
-        <p>Prêt à donner vie au festival en tant que partenaire ? Que tu représentes une marque, une entreprise ou que tu souhaites soutenir notre événement, créons ensemble une expérience exceptionnelle. Clique ci-dessous, découvre les opportunités de partenariat, et fais partie de l'aventure Audacieux !</p>
+        <p>Prêt à donner vie au festival en tant que partenaire ? Que tu représentes une marque, une entreprise ou que
+          tu souhaites soutenir notre événement, créons ensemble une expérience exceptionnelle. Clique ci-dessous,
+          découvre les opportunités de partenariat, et fais partie de l'aventure Audacieux !</p>
         <a class="secondary-btn" href="partenaire.html">Je deviens partenaire !</a>
       </div>
     </section>
 
     <section class="nos-partenaires">
       <h3>MERCI À NOS PARTENAIRES !</h3>
-      <p>Le festival Audacieux ne serait pas possible sans le soutien généreux de nos partenaires.<br>Merci de nous faire confiance pour cette nouvelle édition où règne de grandes ambitions !</p>
-      
+      <p>Le festival Audacieux ne serait pas possible sans le soutien généreux de nos partenaires.<br>Merci de nous
+        faire confiance pour cette nouvelle édition où règne de grandes ambitions !</p>
+
       <div class="partenaires-wrapper">
         <div class="partenaires-bg">
           <img src="/assets/images/logomekanika.png" alt="">
@@ -258,7 +318,10 @@
           <img src="/assets/images/logo-boesner.svg" alt="">
         </div>
         <div class="partenaires-bg">
-          <img class="logoxa" src="/assets/images/logoxa.png" alt="">  
+          <img src="/assets/images/ynov.png" alt="">
+        </div>
+        <div class="partenaires-bg">
+          <img src="/assets/images/electropeak.png" alt="">
         </div>
       </div>
 
@@ -272,82 +335,91 @@
 
     <script defer src="script.js"></script>
 
-    </main>
+  </main>
 
-    <footer id="footer">
-      <h1>SUIVEZ-NOUS !</h1>
-        <section class="footer-socials">
-          <a target="_blank" href="https://www.facebook.com/audacieux.festival/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">          
-            <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="0.5" width="59" height="59" rx="9.5" stroke="#419EC2"/>
-            <path d="M32.25 31.5H34.75L35.75 27.5H32.25V25.5C32.25 24.4706 32.25 23.5 34.25 23.5H35.75V20.1401C35.4243 20.0969 34.193 20 32.8929 20C30.1784 20 28.25 21.6569 28.25 24.6997V27.5H25.25V31.5H28.25V40H32.25V31.5Z" fill="white"/>
-            </svg>
-          </a>
+  <footer id="footer">
+    <h1>SUIVEZ-NOUS !</h1>
+    <section class="footer-socials">
+      <a target="_blank"
+        href="https://www.facebook.com/audacieux.festival/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">
+        <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="0.5" width="59" height="59" rx="9.5" stroke="#419EC2" />
+          <path
+            d="M32.25 31.5H34.75L35.75 27.5H32.25V25.5C32.25 24.4706 32.25 23.5 34.25 23.5H35.75V20.1401C35.4243 20.0969 34.193 20 32.8929 20C30.1784 20 28.25 21.6569 28.25 24.6997V27.5H25.25V31.5H28.25V40H32.25V31.5Z"
+            fill="white" />
+        </svg>
+      </a>
 
-          <a target="_blank" href="https://www.instagram.com/audacieuxfestival/">
-            <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="0.5" width="59" height="59" rx="9.5" stroke="#DF6430"/>
-              <path d="M30.5 27C28.8426 27 27.5 28.3431 27.5 30C27.5 31.6573 28.8431 33 30.5 33C32.1573 33 33.5 31.6569 33.5 30C33.5 28.3427 32.1569 27 30.5 27ZM30.5 25C33.2604 25 35.5 27.2371 35.5 30C35.5 32.7605 33.2629 35 30.5 35C27.7395 35 25.5 32.7629 25.5 30C25.5 27.2395 27.7371 25 30.5 25ZM37 24.7491C37 25.4393 36.4392 25.9992 35.75 25.9992C35.0599 25.9992 34.5 25.4384 34.5 24.7491C34.5 24.0599 35.0607 23.5 35.75 23.5C36.4383 23.4991 37 24.0599 37 24.7491ZM30.5 22C28.0255 22 27.6222 22.0065 26.4713 22.0578C25.6872 22.0946 25.1616 22.2001 24.6732 22.3897C24.2392 22.558 23.9261 22.759 23.5925 23.0925C23.2577 23.4274 23.0571 23.7396 22.8894 24.1738C22.6994 24.6633 22.594 25.1881 22.5578 25.9711C22.5061 27.0752 22.5 27.4611 22.5 30C22.5 32.4745 22.5066 32.8778 22.5578 34.0286C22.5946 34.8124 22.7002 35.3388 22.8894 35.826C23.0581 36.2606 23.2595 36.5744 23.5915 36.9064C23.9277 37.2421 24.2408 37.4434 24.6709 37.6094C25.1652 37.8005 25.6905 37.9061 26.4711 37.9422C27.5752 37.9939 27.9611 38 30.5 38C32.9745 38 33.3778 37.9934 34.5286 37.9422C35.3107 37.9055 35.8375 37.7996 36.326 37.6106C36.7594 37.4423 37.0742 37.2402 37.4064 36.9085C37.7426 36.5718 37.9435 36.2594 38.1097 35.8283C38.3003 35.3358 38.4061 34.8098 38.4422 34.0289C38.4939 32.9248 38.5 32.5389 38.5 30C38.5 27.5255 38.4934 27.1222 38.4422 25.9714C38.4054 25.1891 38.2995 24.6615 38.1103 24.1732C37.9424 23.7404 37.7407 23.4263 37.4074 23.0925C37.072 22.7571 36.7606 22.5569 36.3261 22.3894C35.837 22.1995 35.3114 22.094 34.5288 22.0578C33.4248 22.006 33.0389 22 30.5 22ZM30.5 20C33.2166 20 33.5558 20.01 34.6225 20.06C35.6866 20.1092 36.4125 20.2775 37.05 20.525C37.7091 20.7792 38.2658 21.1225 38.8216 21.6783C39.3766 22.2342 39.72 22.7925 39.975 23.45C40.2216 24.0867 40.39 24.8133 40.44 25.8775C40.4875 26.9442 40.5 27.2833 40.5 30C40.5 32.7167 40.49 33.0558 40.44 34.1225C40.3908 35.1867 40.2216 35.9125 39.975 36.55C39.7208 37.2092 39.3766 37.7658 38.8216 38.3217C38.2658 38.8767 37.7066 39.22 37.05 39.475C36.4125 39.7217 35.6866 39.89 34.6225 39.94C33.5558 39.9875 33.2166 40 30.5 40C27.7833 40 27.4442 39.99 26.3775 39.94C25.3133 39.8908 24.5883 39.7217 23.95 39.475C23.2917 39.2208 22.7342 38.8767 22.1783 38.3217C21.6225 37.7658 21.28 37.2067 21.025 36.55C20.7775 35.9125 20.61 35.1867 20.56 34.1225C20.5125 33.0558 20.5 32.7167 20.5 30C20.5 27.2833 20.51 26.9442 20.56 25.8775C20.6092 24.8125 20.7775 24.0875 21.025 23.45C21.2792 22.7917 21.6225 22.2342 22.1783 21.6783C22.7342 21.1225 23.2925 20.78 23.95 20.525C24.5875 20.2775 25.3125 20.11 26.3775 20.06C27.4442 20.0125 27.7833 20 30.5 20Z" fill="white"/>
-            </svg>
-          </a>
+      <a target="_blank" href="https://www.instagram.com/audacieuxfestival/">
+        <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="0.5" width="59" height="59" rx="9.5" stroke="#DF6430" />
+          <path
+            d="M30.5 27C28.8426 27 27.5 28.3431 27.5 30C27.5 31.6573 28.8431 33 30.5 33C32.1573 33 33.5 31.6569 33.5 30C33.5 28.3427 32.1569 27 30.5 27ZM30.5 25C33.2604 25 35.5 27.2371 35.5 30C35.5 32.7605 33.2629 35 30.5 35C27.7395 35 25.5 32.7629 25.5 30C25.5 27.2395 27.7371 25 30.5 25ZM37 24.7491C37 25.4393 36.4392 25.9992 35.75 25.9992C35.0599 25.9992 34.5 25.4384 34.5 24.7491C34.5 24.0599 35.0607 23.5 35.75 23.5C36.4383 23.4991 37 24.0599 37 24.7491ZM30.5 22C28.0255 22 27.6222 22.0065 26.4713 22.0578C25.6872 22.0946 25.1616 22.2001 24.6732 22.3897C24.2392 22.558 23.9261 22.759 23.5925 23.0925C23.2577 23.4274 23.0571 23.7396 22.8894 24.1738C22.6994 24.6633 22.594 25.1881 22.5578 25.9711C22.5061 27.0752 22.5 27.4611 22.5 30C22.5 32.4745 22.5066 32.8778 22.5578 34.0286C22.5946 34.8124 22.7002 35.3388 22.8894 35.826C23.0581 36.2606 23.2595 36.5744 23.5915 36.9064C23.9277 37.2421 24.2408 37.4434 24.6709 37.6094C25.1652 37.8005 25.6905 37.9061 26.4711 37.9422C27.5752 37.9939 27.9611 38 30.5 38C32.9745 38 33.3778 37.9934 34.5286 37.9422C35.3107 37.9055 35.8375 37.7996 36.326 37.6106C36.7594 37.4423 37.0742 37.2402 37.4064 36.9085C37.7426 36.5718 37.9435 36.2594 38.1097 35.8283C38.3003 35.3358 38.4061 34.8098 38.4422 34.0289C38.4939 32.9248 38.5 32.5389 38.5 30C38.5 27.5255 38.4934 27.1222 38.4422 25.9714C38.4054 25.1891 38.2995 24.6615 38.1103 24.1732C37.9424 23.7404 37.7407 23.4263 37.4074 23.0925C37.072 22.7571 36.7606 22.5569 36.3261 22.3894C35.837 22.1995 35.3114 22.094 34.5288 22.0578C33.4248 22.006 33.0389 22 30.5 22ZM30.5 20C33.2166 20 33.5558 20.01 34.6225 20.06C35.6866 20.1092 36.4125 20.2775 37.05 20.525C37.7091 20.7792 38.2658 21.1225 38.8216 21.6783C39.3766 22.2342 39.72 22.7925 39.975 23.45C40.2216 24.0867 40.39 24.8133 40.44 25.8775C40.4875 26.9442 40.5 27.2833 40.5 30C40.5 32.7167 40.49 33.0558 40.44 34.1225C40.3908 35.1867 40.2216 35.9125 39.975 36.55C39.7208 37.2092 39.3766 37.7658 38.8216 38.3217C38.2658 38.8767 37.7066 39.22 37.05 39.475C36.4125 39.7217 35.6866 39.89 34.6225 39.94C33.5558 39.9875 33.2166 40 30.5 40C27.7833 40 27.4442 39.99 26.3775 39.94C25.3133 39.8908 24.5883 39.7217 23.95 39.475C23.2917 39.2208 22.7342 38.8767 22.1783 38.3217C21.6225 37.7658 21.28 37.2067 21.025 36.55C20.7775 35.9125 20.61 35.1867 20.56 34.1225C20.5125 33.0558 20.5 32.7167 20.5 30C20.5 27.2833 20.51 26.9442 20.56 25.8775C20.6092 24.8125 20.7775 24.0875 21.025 23.45C21.2792 22.7917 21.6225 22.2342 22.1783 21.6783C22.7342 21.1225 23.2925 20.78 23.95 20.525C24.5875 20.2775 25.3125 20.11 26.3775 20.06C27.4442 20.0125 27.7833 20 30.5 20Z"
+            fill="white" />
+        </svg>
+      </a>
 
-          <a target="_blank" href="https://www.linkedin.com/company/audacieux-festival/about/?viewAsMember=true">
-            <svg width="62" height="60" viewBox="0 0 62 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="0.5" width="60" height="59" rx="9.5" stroke="#F5B4AE"/>
-              <path d="M24.5001 23.0004C24.4997 23.8147 24.0056 24.5475 23.2509 24.8532C22.4962 25.1589 21.6314 24.9765 21.0645 24.392C20.4975 23.8075 20.3415 22.9376 20.6701 22.1926C20.9986 21.4475 21.7461 20.976 22.5601 21.0004C23.6411 21.0329 24.5005 21.9189 24.5001 23.0004ZM24.5601 26.4804H20.56V39.0004H24.5601V26.4804ZM30.8801 26.4804H26.9V39.0004H30.8401V32.4304C30.8401 28.7704 35.6101 28.4304 35.6101 32.4304V39.0004H39.5601V31.0704C39.5601 24.9004 32.5001 25.1304 30.8401 28.1604L30.8801 26.4804Z" fill="#F8F7F1"/>
-            </svg>
-          </a>
-          
-          <a target="_blank" href="https://www.tiktok.com/@audacieux.festival">
-            <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="0.5" width="59" height="59" rx="9.5" stroke="#FBBC0C"/>
-              <g clip-path="url(#clip0_512_443)">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5 20C35.6 20 36.5 20.9 36.5 22C36.5 23.42 37.5 24.65 38.9 24.94C39.98 25.16 40.68 26.22 40.46 27.3C40.24 28.38 39.18 29.08 38.1 28.86C37.55 28.75 37.01 28.57 36.5 28.32V34C36.5 37.31 33.81 40 30.5 40C27.19 40 24.5 37.31 24.5 34C24.5 31.26 26.35 28.87 29 28.19C30.07 27.93 31.15 28.59 31.41 29.67C31.66 30.72 31.04 31.78 29.99 32.07C28.92 32.35 28.28 33.45 28.57 34.52C28.8 35.39 29.59 36 30.49 36.01C31.59 36.01 32.49 35.11 32.49 34.01V22C32.49 20.9 33.39 20 34.49 20H34.5Z" fill="#F8F7F1"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_512_443">
-              <rect width="24" height="24" fill="white" transform="translate(20.5 18)"/>
-              </clipPath>
-              </defs>
-              </svg>
-          </a>
-     
-        </section>
-        <section class="footer-row">
-          <div class="footer-column">
-            <div class="footer-bloc">
-              <p class="title-footer">
-                Découvrir l’édition 2024
-              </p>
-              <a href="edition.html" class="link">
-                La thématique
-              </a>
-              <a href="edition.html" class="link">
-                Les artistes
-              </a>
-              <a href="edition.html" class="link">
-                Les partenaires
-              </a>
-              <a href="edition.html" class="link">
-                Les animations
-              </a>
-            </div>
+      <a target="_blank" href="https://www.linkedin.com/company/audacieux-festival/about/?viewAsMember=true">
+        <svg width="62" height="60" viewBox="0 0 62 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="0.5" width="60" height="59" rx="9.5" stroke="#F5B4AE" />
+          <path
+            d="M24.5001 23.0004C24.4997 23.8147 24.0056 24.5475 23.2509 24.8532C22.4962 25.1589 21.6314 24.9765 21.0645 24.392C20.4975 23.8075 20.3415 22.9376 20.6701 22.1926C20.9986 21.4475 21.7461 20.976 22.5601 21.0004C23.6411 21.0329 24.5005 21.9189 24.5001 23.0004ZM24.5601 26.4804H20.56V39.0004H24.5601V26.4804ZM30.8801 26.4804H26.9V39.0004H30.8401V32.4304C30.8401 28.7704 35.6101 28.4304 35.6101 32.4304V39.0004H39.5601V31.0704C39.5601 24.9004 32.5001 25.1304 30.8401 28.1604L30.8801 26.4804Z"
+            fill="#F8F7F1" />
+        </svg>
+      </a>
 
-            <div class="footer-bloc">
-              <p class="title-footer">
-                Participer au festival
-              </p>
-              <a href="candidat.html" class="link">
-                Comment rejoindre les artistes ?
-              </a>
-              <a href="partenaire.html" class="link">
-                Comment devenir partenaire ?
-              </a>
-              <a href="about.html" class="link">
-                Comment devenir bénévole ?
-              </a>
-            </div>
-            <!-- <div class="footer-bloc">
+      <a target="_blank" href="https://www.tiktok.com/@audacieux.festival">
+        <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="0.5" width="59" height="59" rx="9.5" stroke="#FBBC0C" />
+          <g clip-path="url(#clip0_512_443)">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M34.5 20C35.6 20 36.5 20.9 36.5 22C36.5 23.42 37.5 24.65 38.9 24.94C39.98 25.16 40.68 26.22 40.46 27.3C40.24 28.38 39.18 29.08 38.1 28.86C37.55 28.75 37.01 28.57 36.5 28.32V34C36.5 37.31 33.81 40 30.5 40C27.19 40 24.5 37.31 24.5 34C24.5 31.26 26.35 28.87 29 28.19C30.07 27.93 31.15 28.59 31.41 29.67C31.66 30.72 31.04 31.78 29.99 32.07C28.92 32.35 28.28 33.45 28.57 34.52C28.8 35.39 29.59 36 30.49 36.01C31.59 36.01 32.49 35.11 32.49 34.01V22C32.49 20.9 33.39 20 34.49 20H34.5Z"
+              fill="#F8F7F1" />
+          </g>
+          <defs>
+            <clipPath id="clip0_512_443">
+              <rect width="24" height="24" fill="white" transform="translate(20.5 18)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+
+    </section>
+    <section class="footer-row">
+      <div class="footer-column">
+        <div class="footer-bloc">
+          <p class="title-footer">
+            Découvrir l’édition 2024
+          </p>
+          <a href="edition.html" class="link">
+            La thématique
+          </a>
+          <a href="edition.html" class="link">
+            Les artistes
+          </a>
+          <a href="edition.html" class="link">
+            Les partenaires
+          </a>
+          <a href="edition.html" class="link">
+            Les animations
+          </a>
+        </div>
+
+        <div class="footer-bloc">
+          <p class="title-footer">
+            Participer au festival
+          </p>
+          <a href="candidat.html" class="link">
+            Comment rejoindre les artistes ?
+          </a>
+          <a href="partenaire.html" class="link">
+            Comment devenir partenaire ?
+          </a>
+          <a href="about.html" class="link">
+            Comment devenir bénévole ?
+          </a>
+        </div>
+        <!-- <div class="footer-bloc">
               <p class="title-footer">
                 Les éditions précédentes
               </p>
@@ -355,65 +427,76 @@
                 Édition 2023
               </a>
             </div> -->
-          </div>
-          
+      </div>
 
 
 
 
-          <div class="footer-column">
-            <div class="footer-bloc">
-              <p class="title-footer">
-                Le festival Audacieux
-              </p>
-              <a href="about.html" class="link">
-                Qui sommes-nous ?
-              </a>
-              <!-- <a href="" class="link">
+
+      <div class="footer-column">
+        <div class="footer-bloc">
+          <p class="title-footer">
+            Le festival Audacieux
+          </p>
+          <a href="about.html" class="link">
+            Qui sommes-nous ?
+          </a>
+          <!-- <a href="" class="link">
                 Articles de presse
               </a> -->
-              <a href="" class="link">
-                Galerie photo
-              </a>
-              <a href="about.html" class="link">
-                Infos pratiques
-              </a>
-              <a href="about.html" class="link">
-                FAQ
-              </a>
-            </div>
-            <div class="footer-bloc">
-              <p class="title-footer">
-                NOUS CONTACTER
-              </p>
-              <a href="about.html" class="link">
-                Formulaire de contact
-              </a>
-              <!-- <a href="" class="link">
+          <a href="" class="link">
+            Galerie photo
+          </a>
+          <a href="about.html" class="link">
+            Infos pratiques
+          </a>
+          <a href="about.html" class="link">
+            FAQ
+          </a>
+        </div>
+        <div class="footer-bloc">
+          <p class="title-footer">
+            NOUS CONTACTER
+          </p>
+          <a href="about.html" class="link">
+            Formulaire de contact
+          </a>
+          <!-- <a href="" class="link">
                 Téléphone
               </a> -->
-              <!-- <a href="mailto:audacieuxfestival@contact.com" class="link">
+          <!-- <a href="mailto:audacieuxfestival@contact.com" class="link">
                 Mail
               </a> -->
 
-              <div class="email-container">
-                <input type="text" value="contact@audacieuxfestival.fr" id="emailInput" readonly>
-                <button id="copyButton">
+          <div class="email-container">
+            <input type="text" value="contact@audacieuxfestival.fr" id="emailInput" readonly>
+            <button id="copyButton">
 
-                  <svg alt="Copy Icon" id="copyIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z"></path></svg>
+              <svg alt="Copy Icon" id="copyIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="rgba(255,255,255,1)">
+                <path
+                  d="M6.9998 6V3C6.9998 2.44772 7.44752 2 7.9998 2H19.9998C20.5521 2 20.9998 2.44772 20.9998 3V17C20.9998 17.5523 20.5521 18 19.9998 18H16.9998V20.9991C16.9998 21.5519 16.5499 22 15.993 22H4.00666C3.45059 22 3 21.5554 3 20.9991L3.0026 7.00087C3.0027 6.44811 3.45264 6 4.00942 6H6.9998ZM5.00242 8L5.00019 20H14.9998V8H5.00242ZM8.9998 6H16.9998V16H18.9998V4H8.9998V6Z">
+                </path>
+              </svg>
 
-                  <svg  alt="Check Icon" id="checkIcon" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M22 14H20V7.23792L12.0718 14.338L4 7.21594V19H14V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V14ZM4.51146 5L12.0619 11.662L19.501 5H4.51146ZM19 22L15.4645 18.4645L16.8787 17.0503L19 19.1716L22.5355 15.636L23.9497 17.0503L19 22Z"></path></svg>
+              <svg alt="Check Icon" id="checkIcon" style="display: none;" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="rgba(255,255,255,1)">
+                <path
+                  d="M22 14H20V7.23792L12.0718 14.338L4 7.21594V19H14V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21C21.5523 3 22 3.44772 22 4V14ZM4.51146 5L12.0619 11.662L19.501 5H4.51146ZM19 22L15.4645 18.4645L16.8787 17.0503L19 19.1716L22.5355 15.636L23.9497 17.0503L19 22Z">
+                </path>
+              </svg>
 
-                </button>
-              </div>
-
-            </div>
+            </button>
           </div>
-        </section>
-      <div>
-        <img src="/assets/images/logo-footer.svg" alt="">
+
+        </div>
       </div>
-      <p>© Audacieux Festival — Tous droits réservés</p>
-    </footer>
+    </section>
+    <div>
+      <img src="/assets/images/logo-footer.svg" alt="">
+    </div>
+    <p>© Audacieux Festival — Tous droits réservés</p>
+  </footer>
 </body>
+
 </html>

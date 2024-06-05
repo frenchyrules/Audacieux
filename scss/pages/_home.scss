@@ -389,9 +389,9 @@ main{
             img{
                 width: 100%;
             }
-            .logoxa{
-                width: 60%!important;
-            }
+            // .logoxa{
+            //     width: 60%!important;
+            // }
         }
     }
 }
@@ -488,6 +488,10 @@ main{
             p{
                 width: 80%;
             }
+            h2{
+                font-size: 4vw!important;
+            }
+            gap: 2vw;
         }
     }
 

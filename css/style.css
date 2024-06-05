@@ -298,6 +298,16 @@ p {
     margin-top: 8vw;
     margin-bottom: 8vw;
   }
+  .chip {
+    font-size: 4vw;
+  }
+  .pill-artiste {
+    font-size: 4vw;
+    padding: 1vw 2vw 1vw 2vw;
+  }
+  .edition-card h4 {
+    font-size: 5vw;
+  }
 }
 .card-candidat {
   color: #009873;
@@ -1379,9 +1389,6 @@ main {
 .nos-partenaires .partenaires-wrapper .partenaires-bg img {
   width: 100%;
 }
-.nos-partenaires .partenaires-wrapper .partenaires-bg .logoxa {
-  width: 60% !important;
-}
 
 .home-section-tuned {
   display: -webkit-box;
@@ -1495,12 +1502,16 @@ main {
   }
   .village-artistique .stroke-wrapper {
     padding: 4vw !important;
+    gap: 2vw;
   }
   .village-artistique .stroke-wrapper .hide-card {
     display: none;
   }
   .village-artistique .stroke-wrapper p {
     width: 80%;
+  }
+  .village-artistique .stroke-wrapper h2 {
+    font-size: 4vw !important;
   }
   .home-section4 {
     -webkit-box-orient: vertical;
@@ -1779,6 +1790,10 @@ main {
   color: #343434;
   text-align: center;
   width: 50%;
+}
+.edition-section3 p {
+  margin-top: 2vw;
+  text-align: center;
 }
 .edition-section3 a {
   margin-top: 2vw;
@@ -2418,6 +2433,12 @@ main {
     font-size: 7vw !important;
     width: 90%;
     margin-bottom: 4vw;
+  }
+  main .edition-section3 .secondary-btn {
+    margin-top: 4vw;
+  }
+  main .edition-section4 h2 {
+    font-size: 6vw !important;
   }
   .edition-card {
     height: 80vw !important;
@@ -3162,6 +3183,25 @@ main {
           animation: fadeInAnimation ease 1s;
   color: #009873;
 }
+.candidat-section1 .notification-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1vw;
+  padding: 0.8vw;
+  border-radius: 4px;
+  background: #FFF3D2;
+  width: 70%;
+}
+.candidat-section1 .notification-banner svg {
+  height: 1.5vw !important;
+}
 .candidat-section1 .text-hero-banner {
   color: #343434;
   text-align: center;
@@ -3619,6 +3659,19 @@ main {
     width: 90%;
     text-align: left;
   }
+  main .candidat-section1 .notification-banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4vw;
+    padding: 2vw 1vw 2vw 1vw;
+    width: 90%;
+    margin: 4vw 0vw 4vw 0vw;
+  }
+  main .candidat-section1 .notification-banner svg {
+    height: 5vw !important;
+  }
   main .candidat-section2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3986,9 +4039,7 @@ main {
 
 .about-section7 {
   padding: 0vw 8vw 8vw 8vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

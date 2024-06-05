@@ -69,6 +69,11 @@
         text-align: center;
         width: 50%;
     }
+    p{
+        margin-top: 2vw;
+        text-align: center;
+    }
+
     a{
         margin-top: 2vw;
         text-transform: uppercase;
@@ -679,6 +684,14 @@
                 font-size: 7vw!important;
                 width: 90%;
                 margin-bottom: 4vw;
+            }
+            .secondary-btn{
+                margin-top: 4vw;
+            }
+        }
+        .edition-section4{
+            h2{
+                font-size: 6vw!important;
             }
         }
     }
